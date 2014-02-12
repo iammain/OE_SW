@@ -21,6 +21,12 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Declaration>
+        <Class IRI="#AssistantProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AssociateProfessor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Course"/>
     </Declaration>
     <Declaration>
@@ -36,6 +42,9 @@
         <Class IRI="#CourseName"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#EmeritusProfessor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Faculty"/>
     </Declaration>
     <Declaration>
@@ -43,6 +52,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Personnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SeniorLecturer"/>
@@ -56,6 +68,14 @@
     <Declaration>
         <ObjectProperty IRI="#Involves"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="#AssistantProfessor"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AssociateProfessor"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Course"/>
         <ObjectMinCardinality cardinality="5">
@@ -87,11 +107,19 @@
         <Class IRI="#Course"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#EmeritusProfessor"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Faculty"/>
         <Class IRI="#Personnel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Lecturer"/>
+        <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Professor"/>
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
