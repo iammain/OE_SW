@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 
 
 <!DOCTYPE Ontology [
@@ -22,13 +22,31 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
+        <Class IRI="#AdmissionRequirements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arts"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#AssistantProfessor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AssociateProfessor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Bachelor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BusinessAndAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certificate"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CourseCredits"/>
@@ -43,13 +61,34 @@
         <Class IRI="#CourseName"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#DegreeRequirements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DegreeType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Doctorate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ECTS_Needed"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#EmeritusProfessor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Faculty"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#GraduationRequirements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Law"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Master"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Personnel"/>
@@ -61,7 +100,16 @@
         <Class IRI="#Programms"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Research"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Science"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SeniorLecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specializations"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
@@ -70,8 +118,28 @@
         <Class IRI="#Student"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#HasCourses"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#Involves"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#SpecializationProgramme"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SpecializationName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SpecializationType"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AdmissionRequirements"/>
+        <Class IRI="#DegreeRequirements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arts"/>
+        <Class IRI="#Master"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#AssistantProfessor"/>
         <Class IRI="#Faculty"/>
@@ -79,6 +147,18 @@
     <SubClassOf>
         <Class IRI="#AssociateProfessor"/>
         <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bachelor"/>
+        <Class IRI="#DegreeType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BusinessAndAdministration"/>
+        <Class IRI="#Master"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certificate"/>
+        <Class IRI="#DegreeType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Course"/>
@@ -95,6 +175,10 @@
         </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CourseCode"/>
+        <Class IRI="#GraduationRequirements"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#CourseCredits"/>
         <Class IRI="#Course"/>
     </SubClassOf>
@@ -111,6 +195,14 @@
         <Class IRI="#Course"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Doctorate"/>
+        <Class IRI="#DegreeType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ECTS_Needed"/>
+        <Class IRI="#GraduationRequirements"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#EmeritusProfessor"/>
         <Class IRI="#Faculty"/>
     </SubClassOf>
@@ -119,16 +211,71 @@
         <Class IRI="#Personnel"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#DegreeRequirements"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Law"/>
+        <Class IRI="#Master"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Lecturer"/>
         <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Master"/>
+        <Class IRI="#DegreeType"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Professor"/>
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Programms"/>
+        <ObjectMinCardinality cardinality="30">
+            <ObjectProperty IRI="#HasCourses"/>
+            <Class IRI="#Course"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programms"/>
+        <ObjectMaxCardinality cardinality="80">
+            <ObjectProperty IRI="#HasCourses"/>
+            <Class IRI="#Course"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Research"/>
+        <Class IRI="#Master"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Science"/>
+        <Class IRI="#Master"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SeniorLecturer"/>
         <Class IRI="#Faculty"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specializations"/>
+        <ObjectMinCardinality cardinality="3">
+            <ObjectProperty IRI="#HasCourses"/>
+            <Class IRI="#Course"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specializations"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#SpecializationProgramme"/>
+            <Class IRI="#Programms"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specializations"/>
+        <ObjectMaxCardinality cardinality="8">
+            <ObjectProperty IRI="#HasCourses"/>
+            <Class IRI="#Course"/>
+        </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Staff"/>
@@ -138,10 +285,58 @@
         <ObjectProperty IRI="#Involves"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#SpecializationProgramme"/>
+        <Class IRI="#Specializations"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Involves"/>
         <Class IRI="#Student"/>
     </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SpecializationName"/>
+        <Class IRI="#Specializations"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SpecializationType"/>
+        <Class IRI="#Specializations"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#SpecializationType"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">amet</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">dolor</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">ipsum</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">lorem</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">loreme</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">sit</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DegreeType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ECTS_Needed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MinimumCredits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Programms</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpecializationName</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Student Lifecycle Management</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
