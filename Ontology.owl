@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 
 
 <!DOCTYPE Ontology [
@@ -29,6 +29,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CourseCode"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CourseCredits"/>
@@ -70,7 +73,49 @@
         <Class IRI="#Student"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#Involves"/>
+        <ObjectProperty IRI="#areAwardedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInvolved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAwardedWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInvolved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseBookingDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseCredits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseStudents"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseTeachingMethod"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CourseType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Math"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AssistantProfessor"/>
@@ -81,18 +126,8 @@
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#CourseCode"/>
         <Class IRI="#Course"/>
-        <ObjectMinCardinality cardinality="5">
-            <ObjectProperty IRI="#Involves"/>
-            <Class IRI="#Student"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Course"/>
-        <ObjectMaxCardinality cardinality="50">
-            <ObjectProperty IRI="#Involves"/>
-            <Class IRI="#Student"/>
-        </ObjectMaxCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CourseCredits"/>
@@ -134,14 +169,155 @@
         <Class IRI="#Staff"/>
         <Class IRI="#Personnel"/>
     </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Math"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CourseName"/>
+        <NamedIndividual IRI="#Math"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Math</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CourseType"/>
+        <NamedIndividual IRI="#Math"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAwardedWith"/>
+        <ObjectProperty IRI="#areAwardedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInvolved"/>
+        <ObjectProperty IRI="#isInvolved"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPrerequisite"/>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+    </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#Involves"/>
+        <ObjectProperty IRI="#areAwardedTo"/>
+        <Class IRI="#CourseCredits"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInvolved"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAwardedWith"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInvolved"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPrerequisite"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#Involves"/>
+        <ObjectProperty IRI="#areAwardedTo"/>
         <Class IRI="#Student"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInvolved"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAwardedWith"/>
+        <Class IRI="#CourseCredits"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInvolved"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPrerequisite"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseBookingDate"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseCredits"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseEndDate"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseName"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseStartDate"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseStudents"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseTeachingMethod"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CourseType"/>
+        <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseBookingDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseCredits"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseEndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseStudents"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseTeachingMethod"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Lecture</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Practicals</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Seminars</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CourseType"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Arts</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Business</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Laws</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Other</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Research</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
 </Ontology>
 
 
