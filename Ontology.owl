@@ -55,6 +55,12 @@
         <Class IRI="#EmeritusProfessor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exam"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Faculty"/>
     </Declaration>
     <Declaration>
@@ -68,6 +74,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
         <Class IRI="#M.B.A."/>
@@ -88,10 +97,16 @@
         <Class IRI="#Professors"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SchedulingOfficer"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#SchoolDiploma"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SeniorLecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialOccasion"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
@@ -127,6 +142,9 @@
         <ObjectProperty IRI="#holdsDiploma"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hosts"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#includesCourses"/>
     </Declaration>
     <Declaration>
@@ -154,6 +172,9 @@
         <ObjectProperty IRI="#isInProgramme"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isLocated"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isPrerequisite"/>
     </Declaration>
     <Declaration>
@@ -163,10 +184,28 @@
         <ObjectProperty IRI="#isRegistered"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isRequiredCredit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequiredDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isScheduledBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isTaught"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#persues"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresCredit"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresDegree"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#schedules"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#teaches"/>
@@ -182,6 +221,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ending"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#locationDetails"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#name"/>
@@ -205,34 +247,55 @@
         <DataProperty IRI="#typeProgramme"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BachelorDiplomaA"/>
+        <NamedIndividual IRI="#180ECTS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#4ECTS"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#AcceptanceRequirementA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CreditA"/>
+        <NamedIndividual IRI="#BScMathematics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CreditB"/>
+        <NamedIndividual IRI="#ConferenceVenue"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#CreditC"/>
+        <NamedIndividual IRI="#CourseMath"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MajorA"/>
+        <NamedIndividual IRI="#CourseStat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#MinorA"/>
+        <NamedIndividual IRI="#ExamMath"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SchoolDiplomaA"/>
+        <NamedIndividual IRI="#ExamStat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#StudentA"/>
+        <NamedIndividual IRI="#GraduationRequirementA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LectureHall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MajorMath"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MathConference"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MinorStat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#OfficerSam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SchoolDiploma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StudentBob"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AdmissionRequirements"/>
@@ -267,6 +330,10 @@
         <Class IRI="#Professors"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Exam"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Faculty"/>
         <Class IRI="#Personnel"/>
     </SubClassOf>
@@ -307,6 +374,10 @@
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SchedulingOfficer"/>
+        <Class IRI="#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SchoolDiploma"/>
         <Class IRI="#DegreeType"/>
     </SubClassOf>
@@ -315,232 +386,399 @@
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#SpecialOccasion"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Staff"/>
         <Class IRI="#Personnel"/>
     </SubClassOf>
     <ClassAssertion>
+        <Class IRI="#Credit"/>
+        <NamedIndividual IRI="#180ECTS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Credit"/>
+        <NamedIndividual IRI="#4ECTS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdmissionRequirements"/>
+        <NamedIndividual IRI="#AcceptanceRequirementA"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Bachelor"/>
-        <NamedIndividual IRI="#BachelorDiplomaA"/>
+        <NamedIndividual IRI="#BScMathematics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#ConferenceVenue"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Course"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Course"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Credit"/>
-        <NamedIndividual IRI="#CreditA"/>
+        <Class IRI="#Exam"/>
+        <NamedIndividual IRI="#ExamMath"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Credit"/>
-        <NamedIndividual IRI="#CreditB"/>
+        <Class IRI="#Exam"/>
+        <NamedIndividual IRI="#ExamStat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Credit"/>
-        <NamedIndividual IRI="#CreditC"/>
+        <Class IRI="#GraduationRequirements"/>
+        <NamedIndividual IRI="#GraduationRequirementA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Location"/>
+        <NamedIndividual IRI="#LectureHall"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#StudyProgramme"/>
-        <NamedIndividual IRI="#MajorA"/>
+        <NamedIndividual IRI="#MajorMath"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SpecialOccasion"/>
+        <NamedIndividual IRI="#MathConference"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#StudyProgramme"/>
-        <NamedIndividual IRI="#MinorA"/>
+        <NamedIndividual IRI="#MinorStat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SchedulingOfficer"/>
+        <NamedIndividual IRI="#OfficerSam"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SchoolDiploma"/>
-        <NamedIndividual IRI="#SchoolDiplomaA"/>
+        <NamedIndividual IRI="#SchoolDiploma"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Student"/>
-        <NamedIndividual IRI="#StudentA"/>
+        <NamedIndividual IRI="#StudentBob"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#includesProgramme"/>
-        <NamedIndividual IRI="#BachelorDiplomaA"/>
-        <NamedIndividual IRI="#MajorA"/>
+        <ObjectProperty IRI="#requiresDegree"/>
+        <NamedIndividual IRI="#AcceptanceRequirementA"/>
+        <NamedIndividual IRI="#SchoolDiploma"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#includesProgramme"/>
-        <NamedIndividual IRI="#BachelorDiplomaA"/>
-        <NamedIndividual IRI="#MinorA"/>
+        <NamedIndividual IRI="#BScMathematics"/>
+        <NamedIndividual IRI="#MinorStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includesProgramme"/>
+        <NamedIndividual IRI="#BScMathematics"/>
+        <NamedIndividual IRI="#MajorMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#ConferenceVenue"/>
+        <NamedIndividual IRI="#MathConference"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#equalsCredit"/>
-        <NamedIndividual IRI="#CourseA"/>
-        <NamedIndividual IRI="#CreditA"/>
+        <NamedIndividual IRI="#CourseMath"/>
+        <NamedIndividual IRI="#4ECTS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRegistered"/>
-        <NamedIndividual IRI="#CourseA"/>
-        <NamedIndividual IRI="#StudentA"/>
+        <NamedIndividual IRI="#CourseMath"/>
+        <NamedIndividual IRI="#StudentBob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#equalsCredit"/>
-        <NamedIndividual IRI="#CourseB"/>
-        <NamedIndividual IRI="#CreditA"/>
+        <NamedIndividual IRI="#CourseStat"/>
+        <NamedIndividual IRI="#4ECTS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegistered"/>
+        <NamedIndividual IRI="#CourseStat"/>
+        <NamedIndividual IRI="#StudentBob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isInProgramme"/>
-        <NamedIndividual IRI="#CourseB"/>
-        <NamedIndividual IRI="#MinorA"/>
+        <NamedIndividual IRI="#CourseStat"/>
+        <NamedIndividual IRI="#MinorStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isScheduledBy"/>
+        <NamedIndividual IRI="#ExamMath"/>
+        <NamedIndividual IRI="#OfficerSam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isScheduledBy"/>
+        <NamedIndividual IRI="#ExamStat"/>
+        <NamedIndividual IRI="#OfficerSam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#requiresCredit"/>
+        <NamedIndividual IRI="#GraduationRequirementA"/>
+        <NamedIndividual IRI="#180ECTS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#LectureHall"/>
+        <NamedIndividual IRI="#CourseMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#LectureHall"/>
+        <NamedIndividual IRI="#CourseStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#LectureHall"/>
+        <NamedIndividual IRI="#ExamMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#LectureHall"/>
+        <NamedIndividual IRI="#ExamStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#includesCourses"/>
-        <NamedIndividual IRI="#MajorA"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#MajorMath"/>
+        <NamedIndividual IRI="#CourseMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPursuedBy"/>
+        <NamedIndividual IRI="#MajorMath"/>
+        <NamedIndividual IRI="#StudentBob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isScheduledBy"/>
+        <NamedIndividual IRI="#MathConference"/>
+        <NamedIndividual IRI="#OfficerSam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPursuedBy"/>
+        <NamedIndividual IRI="#MinorStat"/>
+        <NamedIndividual IRI="#StudentBob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#schedules"/>
+        <NamedIndividual IRI="#OfficerSam"/>
+        <NamedIndividual IRI="#CourseStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#schedules"/>
+        <NamedIndividual IRI="#OfficerSam"/>
+        <NamedIndividual IRI="#CourseMath"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isHeldBy"/>
-        <NamedIndividual IRI="#SchoolDiplomaA"/>
-        <NamedIndividual IRI="#StudentA"/>
+        <NamedIndividual IRI="#SchoolDiploma"/>
+        <NamedIndividual IRI="#StudentBob"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#credits"/>
+        <NamedIndividual IRI="#180ECTS"/>
+        <Literal datatypeIRI="&xsd;int">180</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#credits"/>
+        <NamedIndividual IRI="#4ECTS"/>
+        <Literal datatypeIRI="&xsd;int">4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#BScMathematics"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mathematics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationDetails"/>
+        <NamedIndividual IRI="#ConferenceVenue"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">45 Kleine Ring, Karlsbad 17564F, Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#ConferenceVenue"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Agora Forum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#bookingDeadline"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-07-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#code"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">MAT101</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#credits"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&xsd;int">6</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ending"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-11-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#CourseA"/>
-        <Literal datatypeIRI="&xsd;string">Linear Algebra</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&xsd;string">Math</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#CourseMath"/>
+        <Literal datatypeIRI="&xsd;string">Linear Algebra</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#starting"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-09-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#statusCourse"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Ongoing</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#students"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&xsd;int">24</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#teachingMethod"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Lecture</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#typeCourse"/>
-        <NamedIndividual IRI="#CourseA"/>
+        <NamedIndividual IRI="#CourseMath"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#bookingDeadline"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-07-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#code"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">STA105</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ending"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-11-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Statistical Theory</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#starting"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-09-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#students"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&xsd;int">15</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#teachingMethod"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Lecture</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#typeCourse"/>
-        <NamedIndividual IRI="#CourseB"/>
+        <NamedIndividual IRI="#CourseStat"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#credits"/>
-        <NamedIndividual IRI="#CreditA"/>
-        <Literal datatypeIRI="&xsd;int">6</Literal>
+        <DataProperty IRI="#ending"/>
+        <NamedIndividual IRI="#ExamMath"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-10-30T17:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#credits"/>
-        <NamedIndividual IRI="#CreditB"/>
-        <Literal datatypeIRI="&xsd;int">4</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#credits"/>
-        <NamedIndividual IRI="#CreditC"/>
-        <Literal datatypeIRI="&xsd;int">2</Literal>
+        <DataProperty IRI="#starting"/>
+        <NamedIndividual IRI="#ExamMath"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-10-30T14:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#ending"/>
-        <NamedIndividual IRI="#MajorA"/>
+        <NamedIndividual IRI="#ExamStat"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-10-28T13:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starting"/>
+        <NamedIndividual IRI="#ExamStat"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-10-28T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#locationDetails"/>
+        <NamedIndividual IRI="#LectureHall"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">15 Ludwig Strasse, Karlsbad 17542G, Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#LectureHall"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Max Planck Hall</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ending"/>
+        <NamedIndividual IRI="#MajorMath"/>
         <Literal datatypeIRI="&xsd;dateTime">2017-07-15T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#MajorA"/>
+        <NamedIndividual IRI="#MajorMath"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Mathematics</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#starting"/>
-        <NamedIndividual IRI="#MajorA"/>
+        <NamedIndividual IRI="#MajorMath"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-09-01T00:00:00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#typeProgramme"/>
-        <NamedIndividual IRI="#MajorA"/>
+        <NamedIndividual IRI="#MajorMath"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Major</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#ending"/>
+        <NamedIndividual IRI="#MathConference"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-10-13T18:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#MinorA"/>
+        <NamedIndividual IRI="#MathConference"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Optimization through Lagrangian Relaxation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#starting"/>
+        <NamedIndividual IRI="#MathConference"/>
+        <Literal datatypeIRI="&xsd;dateTime">2014-10-13T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#MinorStat"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Statistics</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#typeProgramme"/>
-        <NamedIndividual IRI="#MinorA"/>
+        <NamedIndividual IRI="#MinorStat"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Minor</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#StudentA"/>
+        <NamedIndividual IRI="#OfficerSam"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Sam</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#StudentBob"/>
         <Literal datatypeIRI="&xsd;string">Bob Smith</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
@@ -572,6 +810,10 @@
         <ObjectProperty IRI="#isHeldBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#hosts"/>
+        <ObjectProperty IRI="#isLocated"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#isInProgramme"/>
         <ObjectProperty IRI="#includesCourses"/>
     </InverseObjectProperties>
@@ -584,9 +826,27 @@
         <ObjectProperty IRI="#persues"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#requiresCredit"/>
+        <ObjectProperty IRI="#isRequiredCredit"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRequiredDegree"/>
+        <ObjectProperty IRI="#requiresDegree"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isScheduledBy"/>
+        <ObjectProperty IRI="#schedules"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#teaches"/>
         <ObjectProperty IRI="#isTaught"/>
     </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hosts"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isLocated"/>
+    </FunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#areAwardedTo"/>
         <Class IRI="#Credit"/>
@@ -618,6 +878,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#holdsDiploma"/>
         <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hosts"/>
+        <Class IRI="#Location"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#includesCourses"/>
@@ -656,6 +920,13 @@
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLocated"/>
+        <ObjectUnionOf>
+            <Class IRI="#Course"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPrerequisite"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
@@ -668,12 +939,39 @@
         <Class IRI="#Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRequiredCredit"/>
+        <Class IRI="#Credit"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRequiredDegree"/>
+        <Class IRI="#DegreeType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isScheduledBy"/>
+        <ObjectUnionOf>
+            <Class IRI="#Course"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTaught"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#persues"/>
         <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresCredit"/>
+        <Class IRI="#GraduationRequirements"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresDegree"/>
+        <Class IRI="#AdmissionRequirements"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#schedules"/>
+        <Class IRI="#SchedulingOfficer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#teaches"/>
@@ -712,6 +1010,13 @@
         <Class IRI="#DegreeType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hosts"/>
+        <ObjectUnionOf>
+            <Class IRI="#Course"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#includesCourses"/>
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
@@ -748,6 +1053,10 @@
         <Class IRI="#StudyProgramme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLocated"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isPrerequisite"/>
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
@@ -760,12 +1069,39 @@
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRequiredCredit"/>
+        <Class IRI="#GraduationRequirements"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRequiredDegree"/>
+        <Class IRI="#AdmissionRequirements"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isScheduledBy"/>
+        <Class IRI="#SchedulingOfficer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isTaught"/>
         <Class IRI="#Faculty"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#persues"/>
         <Class IRI="#StudyProgramme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresCredit"/>
+        <Class IRI="#Credit"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresDegree"/>
+        <Class IRI="#DegreeType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#schedules"/>
+        <ObjectUnionOf>
+            <Class IRI="#Course"/>
+            <Class IRI="#Event"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#teaches"/>
@@ -800,6 +1136,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#credits"/>
         <Class IRI="#Credit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#locationDetails"/>
+        <Class IRI="#Location"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#statusCourse"/>
@@ -841,6 +1181,10 @@
     <DataPropertyRange>
         <DataProperty IRI="#ending"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#locationDetails"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#name"/>
