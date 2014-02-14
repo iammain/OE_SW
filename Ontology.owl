@@ -58,9 +58,6 @@
         <Class IRI="#CourseInstructor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CourseName"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#DegreeRequirements"/>
     </Declaration>
     <Declaration>
@@ -109,7 +106,7 @@
         <Class IRI="#SeniorLecturer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Specializations"/>
+        <Class IRI="#Specialization"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Staff"/>
@@ -118,13 +115,13 @@
         <Class IRI="#Student"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#HasCourses"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#Involves"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#areAwardedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCourses"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasInvolved"/>
@@ -166,16 +163,13 @@
         <DataProperty IRI="#CourseType"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Math"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#SpecializationProgramme"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#SpecializationName"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#SpecializationType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Math"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="#AdmissionRequirements"/>
@@ -222,10 +216,6 @@
         <Class IRI="#Course"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CourseName"/>
-        <Class IRI="#Course"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Doctorate"/>
         <Class IRI="#DegreeType"/>
     </SubClassOf>
@@ -262,20 +252,6 @@
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Programms"/>
-        <ObjectMinCardinality cardinality="30">
-            <ObjectProperty IRI="#HasCourses"/>
-            <Class IRI="#Course"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Programms"/>
-        <ObjectMaxCardinality cardinality="80">
-            <ObjectProperty IRI="#HasCourses"/>
-            <Class IRI="#Course"/>
-        </ObjectMaxCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Research"/>
         <Class IRI="#Master"/>
     </SubClassOf>
@@ -288,25 +264,25 @@
         <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Specializations"/>
+        <Class IRI="#Specialization"/>
         <ObjectMinCardinality cardinality="3">
-            <ObjectProperty IRI="#HasCourses"/>
+            <ObjectProperty IRI="#hasCourses"/>
             <Class IRI="#Course"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Specializations"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#SpecializationProgramme"/>
-            <Class IRI="#Programms"/>
-        </ObjectMinCardinality>
+        <Class IRI="#Specialization"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#SpecializationName"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Specializations"/>
-        <ObjectMaxCardinality cardinality="8">
-            <ObjectProperty IRI="#HasCourses"/>
-            <Class IRI="#Course"/>
-        </ObjectMaxCardinality>
+        <Class IRI="#Specialization"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="#SpecializationType"/>
+            <Datatype abbreviatedIRI="xsd:anyURI"/>
+        </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Staff"/>
@@ -327,22 +303,26 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isAwardedWith"/>
         <ObjectProperty IRI="#areAwardedTo"/>
+        <ObjectProperty IRI="#isAwardedWith"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasInvolved"/>
         <ObjectProperty IRI="#isInvolved"/>
+        <ObjectProperty IRI="#hasInvolved"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isPrerequisite"/>
         <ObjectProperty IRI="#hasPrerequisite"/>
+        <ObjectProperty IRI="#isPrerequisite"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#areAwardedTo"/>
         <Class IRI="#CourseCredits"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCourses"/>
+        <Class IRI="#Specialization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasInvolved"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
@@ -362,58 +342,14 @@
         <ObjectProperty IRI="#isPrerequisite"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#SpecializationProgramme"/>
-        <Class IRI="#Specializations"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#areAwardedTo"/>
         <Class IRI="#Student"/>
     </ObjectPropertyRange>
-    <DataPropertyDomain>
-        <DataProperty IRI="#SpecializationName"/>
-        <Class IRI="#Specializations"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#SpecializationType"/>
-        <Class IRI="#Specializations"/>
-    </DataPropertyDomain>
-    <DataPropertyRange>
-        <DataProperty IRI="#SpecializationType"/>
-        <DataOneOf>
-            <Literal datatypeIRI="&rdf;PlainLiteral">amet</Literal>
-            <Literal datatypeIRI="&rdf;PlainLiteral">dolor</Literal>
-            <Literal datatypeIRI="&rdf;PlainLiteral">ipsum</Literal>
-            <Literal datatypeIRI="&rdf;PlainLiteral">lorem</Literal>
-            <Literal datatypeIRI="&rdf;PlainLiteral">loreme</Literal>
-            <Literal datatypeIRI="&rdf;PlainLiteral">sit</Literal>
-        </DataOneOf>
-    </DataPropertyRange>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#DegreeType</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Degree</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#ECTS_Needed</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">MinimumCredits</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Programms</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Programme</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#SpecializationName</IRI>
-        <Literal datatypeIRI="&xsd;string"></Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Student Lifecycle Management</Literal>
-    </AnnotationAssertion>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCourses"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasInvolved"/>
         <Class IRI="#Student"/>
@@ -425,6 +361,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isAwardedWith"/>
         <Class IRI="#CourseCredits"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAwardedWith"/>
+        <Class IRI="#Specialization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInvolved"/>
@@ -465,6 +405,14 @@
     <DataPropertyDomain>
         <DataProperty IRI="#CourseType"/>
         <Class IRI="#Course"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SpecializationName"/>
+        <Class IRI="#Specialization"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SpecializationType"/>
+        <Class IRI="#Specialization"/>
     </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#CourseBookingDate"/>
@@ -509,6 +457,46 @@
             <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
         </DataOneOf>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SpecializationName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SpecializationType"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">amet</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">dolor</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">ipsum</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">lorem</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">loreme</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">sit</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DegreeType</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ECTS_Needed</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">MinimumCredits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Programms</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Programme</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpecializationName</IRI>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Student Lifecycle Management</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
