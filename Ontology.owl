@@ -109,10 +109,19 @@
         <ObjectProperty IRI="#areAwardedTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasInvolved"/>
+        <ObjectProperty IRI="#booked"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCompletedSuccessfully"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFailed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasPrerequisite"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegistered"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#holdsDiploma"/>
@@ -124,19 +133,28 @@
         <ObjectProperty IRI="#isAwardedWith"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isBookedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCompletedSuccessfully"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFailed"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isHeldBy"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isInDegree"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isInvolved"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isPrerequisite"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPursuedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRegistered"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isTaught"/>
@@ -170,6 +188,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#starting"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#statusCourse"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#students"/>
@@ -298,7 +319,7 @@
         <NamedIndividual IRI="#CourseA"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasInvolved"/>
+        <ObjectProperty IRI="#hasRegistered"/>
         <NamedIndividual IRI="#CourseA"/>
         <NamedIndividual IRI="#StudentA"/>
     </ObjectPropertyAssertion>
@@ -330,7 +351,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#CourseA"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Linear Algebra</Literal>
+        <Literal datatypeIRI="&xsd;string">Linear Algebra</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
@@ -341,6 +362,11 @@
         <DataProperty IRI="#starting"/>
         <NamedIndividual IRI="#CourseA"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-09-01T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#statusCourse"/>
+        <NamedIndividual IRI="#CourseA"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Ongoing</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#students"/>
@@ -360,19 +386,31 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
         <NamedIndividual IRI="#StudentA"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Bob Smith</Literal>
+        <Literal datatypeIRI="&xsd;string">Bob Smith</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isAwardedWith"/>
         <ObjectProperty IRI="#areAwardedTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#isInvolved"/>
-        <ObjectProperty IRI="#hasInvolved"/>
+        <ObjectProperty IRI="#isBookedBy"/>
+        <ObjectProperty IRI="#booked"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isCompletedSuccessfully"/>
+        <ObjectProperty IRI="#hasCompletedSuccessfully"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFailed"/>
+        <ObjectProperty IRI="#hasFailed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isPrerequisite"/>
         <ObjectProperty IRI="#hasPrerequisite"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRegistered"/>
+        <ObjectProperty IRI="#hasRegistered"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isHeldBy"/>
@@ -383,8 +421,8 @@
         <ObjectProperty IRI="#includesCourses"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#persues"/>
         <ObjectProperty IRI="#isPursuedBy"/>
+        <ObjectProperty IRI="#persues"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#teaches"/>
@@ -395,11 +433,23 @@
         <Class IRI="#Credits"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasInvolved"/>
-        <Class IRI="#Course"/>
+        <ObjectProperty IRI="#booked"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCompletedSuccessfully"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFailed"/>
+        <Class IRI="#Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasPrerequisite"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegistered"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -415,6 +465,18 @@
         <Class IRI="#Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBookedBy"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCompletedSuccessfully"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFailed"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isHeldBy"/>
         <Class IRI="#DegreeType"/>
     </ObjectPropertyDomain>
@@ -423,16 +485,16 @@
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isInvolved"/>
-        <Class IRI="#Student"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPrerequisite"/>
         <Class IRI="#Course"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPursuedBy"/>
         <Class IRI="#Programms"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRegistered"/>
+        <Class IRI="#Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTaught"/>
@@ -451,12 +513,24 @@
         <Class IRI="#Student"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasInvolved"/>
-        <Class IRI="#Student"/>
+        <ObjectProperty IRI="#booked"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCompletedSuccessfully"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFailed"/>
+        <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasPrerequisite"/>
         <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegistered"/>
+        <Class IRI="#Student"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#holdsDiploma"/>
@@ -471,6 +545,18 @@
         <Class IRI="#Credits"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBookedBy"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCompletedSuccessfully"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFailed"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isHeldBy"/>
         <Class IRI="#Student"/>
     </ObjectPropertyRange>
@@ -479,16 +565,16 @@
         <Class IRI="#DegreeType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isInvolved"/>
-        <Class IRI="#Course"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#isPrerequisite"/>
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPursuedBy"/>
         <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRegistered"/>
+        <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isTaught"/>
@@ -502,6 +588,24 @@
         <ObjectProperty IRI="#teaches"/>
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#booked"/>
+        <ObjectProperty IRI="#hasCompletedSuccessfully"/>
+        <ObjectProperty IRI="#isRegistered"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasCompletedSuccessfully"/>
+        <ObjectProperty IRI="#hasFailed"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#hasRegistered"/>
+        <ObjectProperty IRI="#isBookedBy"/>
+        <ObjectProperty IRI="#isCompletedSuccessfully"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#isCompletedSuccessfully"/>
+        <ObjectProperty IRI="#isFailed"/>
+    </DisjointObjectProperties>
     <DataPropertyDomain>
         <DataProperty IRI="#SpecializationName"/>
         <Class IRI="#Specialization"/>
@@ -521,6 +625,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#credits"/>
         <Class IRI="#Credits"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#statusCourse"/>
+        <Class IRI="#Course"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#students"/>
@@ -573,6 +681,15 @@
     <DataPropertyRange>
         <DataProperty IRI="#starting"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#statusCourse"/>
+        <DataOneOf>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Booking</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Ended</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Fully Booked</Literal>
+            <Literal datatypeIRI="&rdf;PlainLiteral">Ongoing</Literal>
+        </DataOneOf>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#students"/>
