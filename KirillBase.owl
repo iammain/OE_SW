@@ -16,10 +16,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/kirill/ontologies/2014/1/merged_ontology">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#AcceptanceRequirement"/>
     </Declaration>
@@ -172,9 +173,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#employs"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
@@ -360,12 +358,6 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AcceptanceRequirementB"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionPosition"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionerSam"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
     </Declaration>
     <Declaration>
@@ -417,7 +409,7 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternshipDiamond"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Jeffry"/>
@@ -444,16 +436,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MinorStat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#PhDMathematics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProfessorHunt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProgrammeLanguage"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Samantha"/>
@@ -465,13 +451,10 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SeniorLecturer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SrLecturerKole"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
+        <NamedIndividual IRI="#JobAdmissions"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#AcceptanceRequirement"/>
@@ -643,14 +626,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionPosition"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionerSam"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -718,12 +693,8 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternshipDiamond"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
@@ -758,20 +729,12 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MinorStat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#SchedulingOfficer"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Doctorate"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#PhDMathematics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#FullProfessor"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProfessorHunt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Language"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProgrammeLanguage"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#SeniorLecturer"/>
@@ -786,21 +749,22 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SeniorLecturer"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#SeniorLecturer"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SrLecturerKole"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#FullTimeJob"/>
+        <NamedIndividual IRI="#JobAdmissions"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#requiresDegree"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AcceptanceRequirementA"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SchoolDiploma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPlayedRole"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesProgramme"/>
@@ -838,11 +802,6 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasRegistered"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPrerequisite"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
@@ -858,24 +817,9 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasRegistered"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isInProgramme"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MinorStat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isScheduledBy"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamMath"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isScheduledBy"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamStat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isDegreeOfType"/>
@@ -898,13 +842,8 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#60ECTS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#employs"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternshipDiamond"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasEmployed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternshipDiamond"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -954,43 +893,8 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPursuedBy"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MajorMath"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isScheduledBy"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MathConference"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPursuedBy"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MinorStat"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPursuedBy"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MinorStat"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#schedules"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#schedules"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProfessorHunt"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamMath"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#teaches"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProfessorHunt"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
@@ -1007,21 +911,6 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Samantha"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
     </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SrLecturerKole"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamStat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#teaches"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SrLecturerKole"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasRole"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
-    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#credits"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#180ECTS"/>
@@ -1036,6 +925,11 @@
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#credits"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#60ECTS"/>
         <Literal datatypeIRI="&xsd;int">60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
+        <Literal datatypeIRI="&xsd;string">Admissions Officer</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
@@ -1189,7 +1083,7 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternshipDiamond"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
         <Literal datatypeIRI="&xsd;string">Data Analyst at Diamond LLC</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -1264,18 +1158,13 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#OfficerSam"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Sam</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#PhDMathematics"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Mathematics</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ProfessorHunt"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Jeffry Hunt</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
+        <Literal datatypeIRI="&xsd;string">Sam Jones</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
@@ -1289,18 +1178,13 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SrLecturerKole"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Samanta Kole</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
         <Literal datatypeIRI="&xsd;string">Mathematics Student</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#StudentBob"/>
-        <Literal datatypeIRI="&xsd;string">Bob Smith</Literal>
+        <NamedIndividual IRI="#JobAdmissions"/>
+        <Literal datatypeIRI="&xsd;string">Admissions Officer at the Admissions Office</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isBookedBy"/>
@@ -1319,8 +1203,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isFailed"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasFailed"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isFailed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPrerequisite"/>
@@ -1343,8 +1227,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isInDegree"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedWith"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedTo"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedWith"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPlayedRole"/>
@@ -1387,10 +1271,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Faculty"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#employs"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
@@ -1584,10 +1464,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Exam"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#employs"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
