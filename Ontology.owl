@@ -22,13 +22,16 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
-        <Class IRI="#AdmissionRequirements"/>
+        <Class IRI="#AcceptanceRequirement"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AssistantProfessor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AssociateProfessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Bachelor"/>
@@ -41,9 +44,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Credit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#DegreeRequirements"/>
     </Declaration>
     <Declaration>
         <Class IRI="#DegreeType"/>
@@ -67,10 +67,25 @@
         <Class IRI="#FullProfessor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#FullTimeJob"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GraduationRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intern"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Internship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Job"/>
     </Declaration>
     <Declaration>
         <Class IRI="#L.L.M"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Lecturer"/>
@@ -91,13 +106,22 @@
         <Class IRI="#Master"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Personnel"/>
+        <Class IRI="#Occupation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Professors"/>
+        <Class IRI="#ParttimeJob"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ProgrammeLanguage"/>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Requirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
     </Declaration>
     <Declaration>
         <Class IRI="#SchedulingOfficer"/>
@@ -112,9 +136,6 @@
         <Class IRI="#SpecialOccasion"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Specialization"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Staff"/>
     </Declaration>
     <Declaration>
@@ -124,10 +145,7 @@
         <Class IRI="#StudyProgramme"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#areAwardedTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#belongsToStudyProgramme"/>
+        <Class IRI="#UniversityPersonnel"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#booked"/>
@@ -142,10 +160,10 @@
         <ObjectProperty IRI="#hasCompletedSuccessfully"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCourses"/>
+        <ObjectProperty IRI="#hasElectiveCourses"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasElectiveCourses"/>
+        <ObjectProperty IRI="#hasEmployed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasFailed"/>
@@ -154,13 +172,7 @@
         <ObjectProperty IRI="#hasInternship"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasMandatoryCourses"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasPrerequisite"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#hasProgrammeOptions"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasRegistered"/>
@@ -172,9 +184,6 @@
         <ObjectProperty IRI="#hasStudyAbroad"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#holdsDiploma"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hosts"/>
     </Declaration>
     <Declaration>
@@ -182,6 +191,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#includesProgramme"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAwardedTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isAwardedWith"/>
@@ -199,10 +211,10 @@
         <ObjectProperty IRI="#isDegreeOfType"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isFailed"/>
+        <ObjectProperty IRI="#isEmployed"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isHeldBy"/>
+        <ObjectProperty IRI="#isFailed"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isInDegree"/>
@@ -212,6 +224,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isLocated"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPlayedRole"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isPrerequisite"/>
@@ -232,6 +247,12 @@
         <ObjectProperty IRI="#isScheduledBy"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#isSetFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSetTo"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#isTaughInLanguage"/>
     </Declaration>
     <Declaration>
@@ -242,6 +263,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#persues"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#playsRole"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#requiresCredit"/>
@@ -266,9 +290,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ending"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#language"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#locationDetails"/>
@@ -313,16 +334,13 @@
         <NamedIndividual IRI="#AcceptanceRequirementB"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BScManagement"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#BScMathematics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Bachelor"/>
+        <NamedIndividual IRI="#BachelorDegree"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#BachelorDegree"/>
+        <NamedIndividual IRI="#Bob"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ConferenceVenue"/>
@@ -334,7 +352,7 @@
         <NamedIndividual IRI="#CourseStat"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#EnglishLanguage"/>
+        <NamedIndividual IRI="#English"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ExamMath"/>
@@ -343,10 +361,22 @@
         <NamedIndividual IRI="#ExamStat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#FullProfessor"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#GraduationRequirementA"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GraduationRequirementB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InternshipDiamond"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jeffry"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#LectureHall"/>
@@ -361,9 +391,6 @@
         <NamedIndividual IRI="#MajorMath"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Master"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#MathConference"/>
     </Declaration>
     <Declaration>
@@ -376,31 +403,28 @@
         <NamedIndividual IRI="#PhDMathematics"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#ProgrammeLanguage"/>
+        <NamedIndividual IRI="#Samantha"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SchoolDiploma"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SrLecturerKole"/>
+        <NamedIndividual IRI="#SeniorLecturer"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#StudentBob"/>
+        <NamedIndividual IRI="#Student"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="#AdmissionRequirements"/>
-        <Class IRI="#DegreeRequirements"/>
+        <Class IRI="#AcceptanceRequirement"/>
+        <Class IRI="#Requirement"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AssistantProfessor"/>
-        <Class IRI="#Professors"/>
+        <Class IRI="#Professor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#AssociateProfessor"/>
-        <Class IRI="#Professors"/>
+        <Class IRI="#Professor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Bachelor"/>
@@ -411,18 +435,12 @@
         <Class IRI="#DegreeType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#DegreeType"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#hasSpecialization"/>
-            <Class IRI="#Specialization"/>
-        </ObjectMinCardinality>
+        <Class IRI="#Credit"/>
+        <Class IRI="#Award"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DegreeType"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#includesCourses"/>
-            <Class IRI="#StudyProgramme"/>
-        </ObjectExactCardinality>
+        <Class IRI="#Award"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Doctorate"/>
@@ -430,7 +448,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#EmeritusProfessor"/>
-        <Class IRI="#Professors"/>
+        <Class IRI="#Professor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Exam"/>
@@ -438,15 +456,31 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Faculty"/>
-        <Class IRI="#Personnel"/>
+        <Class IRI="#UniversityPersonnel"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#FullProfessor"/>
-        <Class IRI="#Professors"/>
+        <Class IRI="#Professor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#GraduationRequirements"/>
-        <Class IRI="#DegreeRequirements"/>
+        <Class IRI="#FullTimeJob"/>
+        <Class IRI="#Job"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GraduationRequirement"/>
+        <Class IRI="#Requirement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intern"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Internship"/>
+        <Class IRI="#Job"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Job"/>
+        <Class IRI="#Occupation"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#L.L.M"/>
@@ -473,12 +507,12 @@
         <Class IRI="#DegreeType"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Professors"/>
-        <Class IRI="#Faculty"/>
+        <Class IRI="#ParttimeJob"/>
+        <Class IRI="#Job"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#ProgrammeLanguage"/>
-        <Class IRI="#StudyProgramme"/>
+        <Class IRI="#Professor"/>
+        <Class IRI="#Faculty"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SchedulingOfficer"/>
@@ -497,50 +531,16 @@
         <Class IRI="#Event"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Specialization"/>
-        <ObjectMinCardinality cardinality="3">
-            <ObjectProperty IRI="#hasCourses"/>
-            <Class IRI="#Course"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Specialization"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#specializationName"/>
-            <Datatype abbreviatedIRI="xsd:anyURI"/>
-        </DataExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Staff"/>
-        <Class IRI="#Personnel"/>
+        <Class IRI="#UniversityPersonnel"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StudyProgramme"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasElectiveCourses"/>
-            <Class IRI="#Course"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="#Student"/>
+        <Class IRI="#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StudyProgramme"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasInternship"/>
-            <Class IRI="#Course"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StudyProgramme"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasStudyAbroad"/>
-            <Class IRI="#Course"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StudyProgramme"/>
-        <ObjectMinCardinality cardinality="8">
-            <ObjectProperty IRI="#hasMandatoryCourses"/>
-            <Class IRI="#Course"/>
-        </ObjectMinCardinality>
+        <Class IRI="#UniversityPersonnel"/>
+        <Class IRI="#Role"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="#Credit"/>
@@ -555,16 +555,12 @@
         <NamedIndividual IRI="#60ECTS"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AdmissionRequirements"/>
+        <Class IRI="#AcceptanceRequirement"/>
         <NamedIndividual IRI="#AcceptanceRequirementA"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#AdmissionRequirements"/>
+        <Class IRI="#AcceptanceRequirement"/>
         <NamedIndividual IRI="#AcceptanceRequirementB"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Bachelor"/>
-        <NamedIndividual IRI="#BScManagement"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Bachelor"/>
@@ -572,11 +568,11 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Bachelor"/>
-        <NamedIndividual IRI="#Bachelor"/>
+        <NamedIndividual IRI="#BachelorDegree"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Bachelor"/>
-        <NamedIndividual IRI="#BachelorDegree"/>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Bob"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Location"/>
@@ -591,11 +587,8 @@
         <NamedIndividual IRI="#CourseStat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#language"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-        <NamedIndividual IRI="#EnglishLanguage"/>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#English"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Exam"/>
@@ -606,12 +599,28 @@
         <NamedIndividual IRI="#ExamStat"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#FullProfessor"/>
+        <NamedIndividual IRI="#FullProfessor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GraduationRequirement"/>
         <NamedIndividual IRI="#GraduationRequirementA"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#GraduationRequirement"/>
         <NamedIndividual IRI="#GraduationRequirementB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intern"/>
+        <NamedIndividual IRI="#InternA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Internship"/>
+        <NamedIndividual IRI="#InternshipDiamond"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Jeffry"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Location"/>
@@ -630,10 +639,6 @@
         <NamedIndividual IRI="#MajorMath"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Master"/>
-        <NamedIndividual IRI="#Master"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="#SpecialOccasion"/>
         <NamedIndividual IRI="#MathConference"/>
     </ClassAssertion>
@@ -650,12 +655,8 @@
         <NamedIndividual IRI="#PhDMathematics"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#FullProfessor"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#ProgrammeLanguage"/>
-        <NamedIndividual IRI="#ProgrammeLanguage"/>
+        <Class IRI="#SeniorLecturer"/>
+        <NamedIndividual IRI="#Samantha"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SchoolDiploma"/>
@@ -663,21 +664,16 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#SeniorLecturer"/>
-        <NamedIndividual IRI="#SrLecturerKole"/>
+        <NamedIndividual IRI="#SeniorLecturer"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Student"/>
-        <NamedIndividual IRI="#StudentBob"/>
+        <NamedIndividual IRI="#Student"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requiresDegree"/>
         <NamedIndividual IRI="#AcceptanceRequirementA"/>
         <NamedIndividual IRI="#SchoolDiploma"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#knowsLanguage"/>
-        <NamedIndividual IRI="#AcceptanceRequirementB"/>
-        <NamedIndividual IRI="#ProgrammeLanguage"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#includesProgramme"/>
@@ -688,6 +684,16 @@
         <ObjectProperty IRI="#includesProgramme"/>
         <NamedIndividual IRI="#BScMathematics"/>
         <NamedIndividual IRI="#MajorMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsRole"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#Student"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsRole"/>
+        <NamedIndividual IRI="#Bob"/>
+        <NamedIndividual IRI="#InternA"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hosts"/>
@@ -702,7 +708,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRegistered"/>
         <NamedIndividual IRI="#CourseMath"/>
-        <NamedIndividual IRI="#StudentBob"/>
+        <NamedIndividual IRI="#Bob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPrerequisite"/>
+        <NamedIndividual IRI="#CourseMath"/>
+        <NamedIndividual IRI="#CourseStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#equalsCredit"/>
@@ -712,7 +723,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasRegistered"/>
         <NamedIndividual IRI="#CourseStat"/>
-        <NamedIndividual IRI="#StudentBob"/>
+        <NamedIndividual IRI="#Bob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isInProgramme"/>
@@ -730,24 +741,34 @@
         <NamedIndividual IRI="#OfficerSam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDegreeOfType"/>
-        <NamedIndividual IRI="#GraduationRequirementA"/>
-        <NamedIndividual IRI="#Bachelor"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requiresCredit"/>
         <NamedIndividual IRI="#GraduationRequirementA"/>
         <NamedIndividual IRI="#180ECTS"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isDegreeOfType"/>
-        <NamedIndividual IRI="#GraduationRequirementB"/>
-        <NamedIndividual IRI="#Master"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#requiresCredit"/>
         <NamedIndividual IRI="#GraduationRequirementB"/>
         <NamedIndividual IRI="#60ECTS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEmployed"/>
+        <NamedIndividual IRI="#InternshipDiamond"/>
+        <NamedIndividual IRI="#InternA"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#conducts"/>
+        <NamedIndividual IRI="#Jeffry"/>
+        <NamedIndividual IRI="#ExamMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#playsRole"/>
+        <NamedIndividual IRI="#Jeffry"/>
+        <NamedIndividual IRI="#FullProfessor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teaches"/>
+        <NamedIndividual IRI="#Jeffry"/>
+        <NamedIndividual IRI="#CourseMath"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hosts"/>
@@ -777,7 +798,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isPursuedBy"/>
         <NamedIndividual IRI="#MajorMath"/>
-        <NamedIndividual IRI="#StudentBob"/>
+        <NamedIndividual IRI="#Bob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isScheduledBy"/>
@@ -787,12 +808,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#isPursuedBy"/>
         <NamedIndividual IRI="#MinorStat"/>
-        <NamedIndividual IRI="#StudentBob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <NamedIndividual IRI="#OfficerSam"/>
-        <NamedIndividual IRI="#BScManagement"/>
+        <NamedIndividual IRI="#Bob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#schedules"/>
@@ -806,57 +822,17 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#conducts"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-        <NamedIndividual IRI="#ExamMath"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-        <NamedIndividual IRI="#BScMathematics"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-        <NamedIndividual IRI="#MScMathematics"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-        <NamedIndividual IRI="#PhDMathematics"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#teaches"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-        <NamedIndividual IRI="#CourseMath"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isTaughInLanguage"/>
-        <NamedIndividual IRI="#ProgrammeLanguage"/>
-        <NamedIndividual IRI="#EnglishLanguage"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isHeldBy"/>
-        <NamedIndividual IRI="#SchoolDiploma"/>
-        <NamedIndividual IRI="#StudentBob"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#conducts"/>
-        <NamedIndividual IRI="#SrLecturerKole"/>
+        <NamedIndividual IRI="#Samantha"/>
         <NamedIndividual IRI="#ExamStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <NamedIndividual IRI="#SrLecturerKole"/>
-        <NamedIndividual IRI="#MScStatistics"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <NamedIndividual IRI="#SrLecturerKole"/>
-        <NamedIndividual IRI="#BScMathematics"/>
+        <ObjectProperty IRI="#playsRole"/>
+        <NamedIndividual IRI="#Samantha"/>
+        <NamedIndividual IRI="#SeniorLecturer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#teaches"/>
-        <NamedIndividual IRI="#SrLecturerKole"/>
+        <NamedIndividual IRI="#Samantha"/>
         <NamedIndividual IRI="#CourseStat"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
@@ -876,13 +852,13 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#BScManagement"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Management</Literal>
+        <NamedIndividual IRI="#BScMathematics"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Mathematics</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#BScMathematics"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Mathematics</Literal>
+        <NamedIndividual IRI="#Bob"/>
+        <Literal datatypeIRI="&xsd;string">Bob Smith</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#locationDetails"/>
@@ -985,8 +961,8 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">Science</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#language"/>
-        <NamedIndividual IRI="#EnglishLanguage"/>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#English"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">English</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
@@ -1008,6 +984,26 @@
         <DataProperty IRI="#starting"/>
         <NamedIndividual IRI="#ExamStat"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-10-28T10:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#FullProfessor"/>
+        <Literal datatypeIRI="&xsd;string">Full Professor of Mathematics</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#InternA"/>
+        <Literal datatypeIRI="&xsd;string">Analyst Intern</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#InternshipDiamond"/>
+        <Literal datatypeIRI="&xsd;string">Data Analyst at Diamond LLC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Jeffry"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Jeffry Hunt</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#locationDetails"/>
@@ -1086,39 +1082,19 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#ProfessorHunt"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Jeffry Hunt</Literal>
+        <NamedIndividual IRI="#Samantha"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Samantha Kole</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#SrLecturerKole"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Samanta Kole</Literal>
+        <NamedIndividual IRI="#SeniorLecturer"/>
+        <Literal datatypeIRI="&xsd;string">Senior Lecturer of Statistics</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#name"/>
-        <NamedIndividual IRI="#StudentBob"/>
-        <Literal datatypeIRI="&xsd;string">Bob Smith</Literal>
+        <NamedIndividual IRI="#Student"/>
+        <Literal datatypeIRI="&xsd;string">Mathematics Student</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasElectiveCourses"/>
-        <ObjectProperty IRI="#hasProgrammeOptions"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasInternship"/>
-        <ObjectProperty IRI="#hasProgrammeOptions"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasMandatoryCourses"/>
-        <ObjectProperty IRI="#hasProgrammeOptions"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#hasStudyAbroad"/>
-        <ObjectProperty IRI="#hasProgrammeOptions"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#isAwardedWith"/>
-        <ObjectProperty IRI="#areAwardedTo"/>
-    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isBookedBy"/>
         <ObjectProperty IRI="#booked"/>
@@ -1132,8 +1108,12 @@
         <ObjectProperty IRI="#hasCompletedSuccessfully"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasFailed"/>
+        <ObjectProperty IRI="#hasEmployed"/>
+        <ObjectProperty IRI="#isEmployed"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#isFailed"/>
+        <ObjectProperty IRI="#hasFailed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isPrerequisite"/>
@@ -1142,10 +1122,6 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#isRegistered"/>
         <ObjectProperty IRI="#hasRegistered"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <ObjectProperty IRI="#isHeldBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isLocated"/>
@@ -1158,6 +1134,14 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="#includesProgramme"/>
         <ObjectProperty IRI="#isInDegree"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAwardedWith"/>
+        <ObjectProperty IRI="#isAwardedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPlayedRole"/>
+        <ObjectProperty IRI="#playsRole"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#isPursuedBy"/>
@@ -1176,6 +1160,10 @@
         <ObjectProperty IRI="#isScheduledBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="#isSetTo"/>
+        <ObjectProperty IRI="#isSetFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="#teaches"/>
         <ObjectProperty IRI="#isTaught"/>
     </InverseObjectProperties>
@@ -1185,14 +1173,6 @@
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#isConductedBy"/>
     </FunctionalObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#areAwardedTo"/>
-        <Class IRI="#Credit"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#belongsToStudyProgramme"/>
-        <Class IRI="#DegreeRequirements"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#booked"/>
         <Class IRI="#Student"/>
@@ -1210,12 +1190,12 @@
         <Class IRI="#Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasCourses"/>
-        <Class IRI="#Specialization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasElectiveCourses"/>
         <Class IRI="#StudyProgramme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmployed"/>
+        <Class IRI="#Job"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasFailed"/>
@@ -1223,10 +1203,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasInternship"/>
-        <Class IRI="#StudyProgramme"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasMandatoryCourses"/>
         <Class IRI="#StudyProgramme"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -1244,13 +1220,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasStudyAbroad"/>
         <Class IRI="#StudyProgramme"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <ObjectUnionOf>
-            <Class IRI="#Personnel"/>
-            <Class IRI="#Student"/>
-        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hosts"/>
@@ -1272,8 +1241,12 @@
         </ObjectSomeValuesFrom>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAwardedTo"/>
+        <Class IRI="#Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isAwardedWith"/>
-        <Class IRI="#Student"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isBookedBy"/>
@@ -1289,15 +1262,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isDegreeOfType"/>
-        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#GraduationRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEmployed"/>
+        <Class IRI="#Role"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isFailed"/>
         <Class IRI="#Course"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isHeldBy"/>
-        <Class IRI="#DegreeType"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isInDegree"/>
@@ -1313,6 +1286,10 @@
             <Class IRI="#Course"/>
             <Class IRI="#Event"/>
         </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPlayedRole"/>
+        <Class IRI="#Role"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isPrerequisite"/>
@@ -1342,8 +1319,16 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSetFor"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSetTo"/>
+        <Class IRI="#StudyProgramme"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTaughInLanguage"/>
-        <Class IRI="#ProgrammeLanguage"/>
+        <Class IRI="#StudyProgramme"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#isTaught"/>
@@ -1358,12 +1343,16 @@
         <Class IRI="#Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#playsRole"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#requiresCredit"/>
-        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#GraduationRequirement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#requiresDegree"/>
-        <Class IRI="#AdmissionRequirements"/>
+        <Class IRI="#AcceptanceRequirement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#schedules"/>
@@ -1373,14 +1362,6 @@
         <ObjectProperty IRI="#teaches"/>
         <Class IRI="#Faculty"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#areAwardedTo"/>
-        <Class IRI="#Student"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#belongsToStudyProgramme"/>
-        <Class IRI="#StudyProgramme"/>
-    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#booked"/>
         <Class IRI="#Course"/>
@@ -1398,12 +1379,12 @@
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasCourses"/>
+        <ObjectProperty IRI="#hasElectiveCourses"/>
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasElectiveCourses"/>
-        <Class IRI="#Course"/>
+        <ObjectProperty IRI="#hasEmployed"/>
+        <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasFailed"/>
@@ -1411,10 +1392,6 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasInternship"/>
-        <Class IRI="#Course"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasMandatoryCourses"/>
         <Class IRI="#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -1426,16 +1403,8 @@
         <Class IRI="#Student"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSpecialization"/>
-        <Class IRI="#Specialization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStudyAbroad"/>
         <Class IRI="#Course"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#holdsDiploma"/>
-        <Class IRI="#DegreeType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hosts"/>
@@ -1453,8 +1422,12 @@
         <Class IRI="#StudyProgramme"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAwardedTo"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isAwardedWith"/>
-        <Class IRI="#Credit"/>
+        <Class IRI="#Award"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isBookedBy"/>
@@ -1485,15 +1458,12 @@
         <Class IRI="#Master"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isFailed"/>
-        <Class IRI="#Student"/>
+        <ObjectProperty IRI="#isEmployed"/>
+        <Class IRI="#Job"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isHeldBy"/>
-        <ObjectUnionOf>
-            <Class IRI="#Personnel"/>
-            <Class IRI="#Student"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="#isFailed"/>
+        <Class IRI="#Student"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isInDegree"/>
@@ -1506,6 +1476,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isLocated"/>
         <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPlayedRole"/>
+        <Class IRI="#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isPrerequisite"/>
@@ -1521,22 +1495,27 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRequiredCredit"/>
-        <Class IRI="#GraduationRequirements"/>
+        <Class IRI="#GraduationRequirement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isRequiredDegree"/>
-        <Class IRI="#AdmissionRequirements"/>
+        <Class IRI="#AcceptanceRequirement"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isScheduledBy"/>
         <Class IRI="#SchedulingOfficer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSetFor"/>
+        <Class IRI="#StudyProgramme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSetTo"/>
+        <Class IRI="#Requirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#isTaughInLanguage"/>
-        <DataExactCardinality cardinality="1">
-            <DataProperty IRI="#language"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataExactCardinality>
+        <Class IRI="#Language"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isTaught"/>
@@ -1544,11 +1523,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#knowsLanguage"/>
-        <Class IRI="#ProgrammeLanguage"/>
+        <Class IRI="#Language"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#persues"/>
         <Class IRI="#StudyProgramme"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#playsRole"/>
+        <Class IRI="#Role"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#requiresCredit"/>
@@ -1600,20 +1583,8 @@
         <Class IRI="#Credit"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#language"/>
-        <Class IRI="#Student"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#language"/>
-        <Class IRI="#StudyProgramme"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#locationDetails"/>
         <Class IRI="#Location"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#specializationName"/>
-        <Class IRI="#Specialization"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#statusCourse"/>
@@ -1655,10 +1626,6 @@
     <DataPropertyRange>
         <DataProperty IRI="#ending"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#language"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#locationDetails"/>
