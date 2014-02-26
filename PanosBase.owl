@@ -1127,7 +1127,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#InternA"/>
-        <Literal datatypeIRI="&xsd;string">Analyst Intern</Literal>
+        <Literal datatypeIRI="&xsd;string">Analyst-Intern</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
