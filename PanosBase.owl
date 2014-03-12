@@ -681,27 +681,6 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#ServiceCenter"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
-            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
-        <ObjectAllValuesFrom>
-            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
-            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
-        </ObjectAllValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
-            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#University"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
     </SubClassOf>
@@ -937,6 +916,16 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fileR"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
+        <NamedIndividual IRI="#RequestAboutTuitionFees"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#forwardRChange"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasGraduationRequirements"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScManagement"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqBachelor"/>
@@ -1117,16 +1106,6 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScManagement"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#fileR"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
-        <NamedIndividual IRI="#RequestAboutTuitionFees"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#forwardRChange"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Samantha"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamStat"/>
@@ -1154,7 +1133,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#allocateR"/>
         <NamedIndividual IRI="#AccountingDepartment"/>
-        <NamedIndividual IRI="#Jessica"/>
+        <NamedIndividual IRI="#UniversityAccountant"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasPlacement"/>
@@ -1177,11 +1156,6 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScMathematics"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#answerR"/>
-        <NamedIndividual IRI="#Jessica"/>
-        <NamedIndividual IRI="#AccountingDepartment"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasSpecializationCourses"/>
         <NamedIndividual IRI="#SpecializationSoftwareEngineer"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
@@ -1194,12 +1168,17 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
         <NamedIndividual IRI="#UniversityAccountant"/>
-        <NamedIndividual IRI="#AccountingDepartment"/>
+        <NamedIndividual IRI="#JobUniversityAccountant"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPlayedRoleBy"/>
         <NamedIndividual IRI="#UniversityAccountant"/>
         <NamedIndividual IRI="#Jessica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#answerR"/>
+        <NamedIndividual IRI="#UniversityAccountant"/>
+        <NamedIndividual IRI="#AccountingDepartment"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#credits"/>
@@ -1528,6 +1507,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#replyR"/>
         <ObjectProperty IRI="#request"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#request"/>
+        <ObjectProperty IRI="#sendR"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#retrieveR"/>
