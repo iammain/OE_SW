@@ -1554,7 +1554,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isConductedBy"/>
         <NamedIndividual IRI="#ResitMath"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Jeffry"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#FullProfessor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isLocated"/>
