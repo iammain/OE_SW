@@ -10,12 +10,12 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase"
+     xml:base="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase">
+     ontologyIRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -166,58 +166,76 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#UniversityPersonnel"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Application&amp;Admission"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Application&amp;Admission"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BA"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BBA"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BBA"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BMed"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BMed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BSc"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BSc"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#BankAccount"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Cash"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Cash"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CurriculumManagement"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#CurriculumManagement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#E-Money"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Grading&amp;Advising"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Grading&amp;Advising"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#L.L.B"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#L.L.B"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#MMed"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#MMed"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Money"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Money"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Progression&amp;Graduation"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Progression&amp;Graduation"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Provost"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Provost"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Registrar"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Registrar"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Specialization"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#StudentAdministration"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#StudentAdministration"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingDepartment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingServices"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Specialization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Response"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#booked"/>
@@ -349,46 +367,82 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#teaches"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#givenForCourse"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#givenForCourse"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPlacement"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPlacement"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPutOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasPutOn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasTranfered"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSpecialization"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isOwnedBy"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSpecializationCourses"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPlacementAt"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasTranfered"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPutOn"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isTransfered"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPlacementAt"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isPutOn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#setsGraduationRequirementsOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#isTransfered"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#ownes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecialization"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#receive"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecializationCourses"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#setsGraduationRequirementsOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#providesAccountingServices"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAddressed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExam"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFiled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFulfilled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReceived"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasResulted"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAddressedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExamOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFiledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFulfilledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResultedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSentTo"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#bookingDeadline"/>
@@ -409,9 +463,6 @@
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#specializationName"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#starting"/>
     </Declaration>
     <Declaration>
@@ -430,6 +481,9 @@
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#typeProgramme"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#requestText"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#180ECTS"/>
     </Declaration>
     <Declaration>
@@ -443,9 +497,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AnalystIntern"/>
@@ -470,6 +521,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#English"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamMath"/>
@@ -529,37 +583,55 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#2000€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#2000€"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#385M€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#385M€"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#500€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#500€"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Bachelor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Bachelor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#DiamondLLC"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_INGB134568902345"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#IBAN_INGB134568902345"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_RABB230923839999"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#IBAN_RABB230923839999"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Master"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#JobAdmissions"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#RWTH"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Master"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingDepartment"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#RWTH"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#DiamondLLC"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SpecializationSoftwareEngineer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Jessica"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobAdmissions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobUniversityAccountant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#SpecializationSoftwareEngineer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResponseTuitionFees"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#AcceptanceRequirement"/>
@@ -698,6 +770,27 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#ServiceCenter"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#University"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
     </SubClassOf>
@@ -706,68 +799,88 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Application&amp;Admission"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Application&amp;Admission"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BA"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BA"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BBA"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BBA"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BMed"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BMed"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#BSc"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BSc"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Cash"/>
-        <Class IRI="#Money"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Cash"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Money"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#CurriculumManagement"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#CurriculumManagement"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#E-Money"/>
-        <Class IRI="#Money"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Money"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Grading&amp;Advising"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Grading&amp;Advising"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#L.L.B"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#L.L.B"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#MMed"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#MMed"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Master"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Progression&amp;Graduation"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Progression&amp;Graduation"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Provost"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Provost"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Staff"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Registrar"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Registrar"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Staff"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Specialization"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#StudentAdministration"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingDepartment"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingOfficer"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Staff"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingServices"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+        <Class IRI="#Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Specialization"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Award"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StudentAdministration"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Services"/>
+        <Class IRI="#Response"/>
+        <Class IRI="#Document"/>
     </SubClassOf>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Credit"/>
@@ -790,19 +903,23 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Intern"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AnalystIntern"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BBA"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScManagement"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BSc"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BBA"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScManagement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScMathematics"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BSc"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScMathematics"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -824,6 +941,10 @@
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Language"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#English"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Exam"/>
@@ -902,48 +1023,72 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Student"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#E-Money"/>
-        <NamedIndividual IRI="#2000€"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#2000€"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#E-Money"/>
-        <NamedIndividual IRI="#385M€"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#385M€"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Cash"/>
-        <NamedIndividual IRI="#500€"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Cash"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#500€"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Bachelor"/>
-        <NamedIndividual IRI="#Bachelor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Bachelor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
-        <NamedIndividual IRI="#DiamondLLC"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_INGB134568902345"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#BankAccount"/>
-        <NamedIndividual IRI="#IBAN_INGB134568902345"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#BankAccount"/>
-        <NamedIndividual IRI="#IBAN_RABB230923839999"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#FullTimeJob"/>
-        <NamedIndividual IRI="#JobAdmissions"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_RABB230923839999"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Master"/>
-        <NamedIndividual IRI="#Master"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Master"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#University"/>
-        <NamedIndividual IRI="#RWTH"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#RWTH"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="#Specialization"/>
-        <NamedIndividual IRI="#SpecializationSoftwareEngineer"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingDepartment"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingDepartment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#DiamondLLC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Jessica"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#FullTimeJob"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobAdmissions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#FullTimeJob"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobUniversityAccountant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Specialization"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#SpecializationSoftwareEngineer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingOfficer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Response"/>
+        <NamedIndividual IRI="#ResponseTuitionFees"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#requiresDegree"/>
@@ -951,22 +1096,7 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#SchoolDiploma"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlacement"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Admissions"/>
-        <NamedIndividual IRI="#JobAdmissions"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
-        <NamedIndividual IRI="#JobAdmissions"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPlayedRoleBy"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScManagement"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqBachelor"/>
     </ObjectPropertyAssertion>
@@ -981,14 +1111,14 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MajorMath"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScMathematics"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqBachelor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSpecialization"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecialization"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScMathematics"/>
-        <NamedIndividual IRI="#SpecializationSoftwareEngineer"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#SpecializationSoftwareEngineer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#playsRole"/>
@@ -1001,14 +1131,14 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AnalystIntern"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
-        <NamedIndividual IRI="#IBAN_INGB134568902345"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_INGB134568902345"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
-        <NamedIndividual IRI="#500€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#500€"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hosts"/>
@@ -1031,6 +1161,11 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExam"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#4ECTS"/>
@@ -1046,9 +1181,24 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MinorStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasExam"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobAdmissions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPlayedRoleBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Sam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isDegreeOfType"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqBachelor"/>
-        <NamedIndividual IRI="#Bachelor"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Bachelor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#requiresCredit"/>
@@ -1058,7 +1208,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isDegreeOfType"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqMasters"/>
-        <NamedIndividual IRI="#Master"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Master"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#requiresCredit"/>
@@ -1121,12 +1271,12 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ExamStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MScMathematics"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqMasters"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MScStatistics"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqMasters"/>
     </ObjectPropertyAssertion>
@@ -1136,9 +1286,19 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MajorMath"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPursuedBy"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MajorMath"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isLocated"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MathConference"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ConferenceVenue"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPursuedBy"/>
@@ -1176,44 +1336,79 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isOwnedBy"/>
-        <NamedIndividual IRI="#2000€"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isOwnedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#2000€"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Bob"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPutOn"/>
-        <NamedIndividual IRI="#2000€"/>
-        <NamedIndividual IRI="#IBAN_INGB134568902345"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPutOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#2000€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_INGB134568902345"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isOwnedBy"/>
-        <NamedIndividual IRI="#385M€"/>
-        <NamedIndividual IRI="#RWTH"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isOwnedBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#385M€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#RWTH"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#isPutOn"/>
-        <NamedIndividual IRI="#385M€"/>
-        <NamedIndividual IRI="#IBAN_RABB230923839999"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPutOn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#385M€"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_RABB230923839999"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasPlacement"/>
-        <NamedIndividual IRI="#DiamondLLC"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#Internship"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#RWTH"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_RABB230923839999"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#ownes"/>
-        <NamedIndividual IRI="#RWTH"/>
-        <NamedIndividual IRI="#IBAN_RABB230923839999"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedWith"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Jessica"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#BScMathematics"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSpecializationCourses"/>
-        <NamedIndividual IRI="#SpecializationSoftwareEngineer"/>
+        <ObjectProperty IRI="#isFiledBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFulfilledBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isResultedIn"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+        <NamedIndividual IRI="#ResponseTuitionFees"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSentTo"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecializationCourses"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#SpecializationSoftwareEngineer"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseMath"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#hasSpecializationCourses"/>
-        <NamedIndividual IRI="#SpecializationSoftwareEngineer"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecializationCourses"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#SpecializationSoftwareEngineer"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#CourseStat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobUniversityAccountant"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPlayedRoleBy"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Jessica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSentTo"/>
+        <NamedIndividual IRI="#ResponseTuitionFees"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#credits"/>
@@ -1229,11 +1424,6 @@
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#credits"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#60ECTS"/>
         <Literal datatypeIRI="&xsd;int">60</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#AdmissionsOfficer"/>
-        <Literal datatypeIRI="&xsd;string">Admissions Officer</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
@@ -1359,6 +1549,11 @@
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#English"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">English</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#EnrollmentManager"/>
+        <Literal datatypeIRI="&xsd;string">Admissions Officer</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#ending"/>
@@ -1487,28 +1682,48 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="#DiamondLLC"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Diamond LLC</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="#IBAN_INGB134568902345"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_INGB134568902345"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Personal account of Bob</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="#IBAN_RABB230923839999"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#IBAN_RABB230923839999"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Public account of the University</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="#JobAdmissions"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#RWTH"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Aachen Polytechnical Institute</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#DiamondLLC"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Diamond LLC</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobAdmissions"/>
         <Literal datatypeIRI="&xsd;string">Admissions Officer at the Admissions Office</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <NamedIndividual IRI="#RWTH"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Aachen Polytechnical Institute</Literal>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#JobUniversityAccountant"/>
+        <Literal datatypeIRI="&xsd;string">Accountant Of the University Financial Operations</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+        <Literal datatypeIRI="&xsd;string">RequestAboutTuitionFees</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#requestText"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#RequestTuitionFees"/>
+        <Literal datatypeIRI="&xsd;string">I would like to ask some information about wether or not student with id I601234 has paid his tuition fees</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#UniversityAccountant"/>
+        <Literal datatypeIRI="&xsd;string">Financial Accounant</Literal>
     </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isBookedBy"/>
@@ -1519,7 +1734,7 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isConductedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#givenForCourse"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#givenForCourse"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
@@ -1531,8 +1746,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasFailed"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isFailed"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasFailed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPrerequisite"/>
@@ -1555,8 +1770,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isInDegree"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedTo"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedWith"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#playsRole"/>
@@ -1587,20 +1802,44 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isTaught"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasPlacement"/>
-        <ObjectProperty IRI="#isPlacementAt"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPlacement"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPlacementAt"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasPutOn"/>
-        <ObjectProperty IRI="#isPutOn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPutOn"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPutOn"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#hasTranfered"/>
-        <ObjectProperty IRI="#isTransfered"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasTranfered"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isTransfered"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#ownes"/>
-        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isOwnedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAddressedTo"/>
+        <ObjectProperty IRI="#hasAddressed"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isExamOf"/>
+        <ObjectProperty IRI="#hasExam"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFiledBy"/>
+        <ObjectProperty IRI="#hasFiled"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isFulfilledBy"/>
+        <ObjectProperty IRI="#hasFulfilled"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSentTo"/>
+        <ObjectProperty IRI="#hasReceived"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isResultedIn"/>
+        <ObjectProperty IRI="#hasResulted"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
@@ -1791,67 +2030,118 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Faculty"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#givenForCourse"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#givenForCourse"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Credit"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPlacement"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPlacement"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasPutOn"/>
-        <Class IRI="#BankAccount"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPutOn"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSpecialization"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasTranfered"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSpecializationCourses"/>
-        <Class IRI="#Specialization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasTranfered"/>
-        <Class IRI="#BankAccount"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isOwnedBy"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
-            <Class IRI="#BankAccount"/>
-            <Class IRI="#Money"/>
+            <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
+            <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Money"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPlacementAt"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPlacementAt"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Job"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isPutOn"/>
-        <Class IRI="#E-Money"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPutOn"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#isTransfered"/>
-        <Class IRI="#E-Money"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isTransfered"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#ownes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
             <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#receive"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#setsGraduationRequirementsOf"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Application&amp;Admission"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#setsGraduationRequirementsOf"/>
-        <Class IRI="#Application&amp;Admission"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecialization"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecializationCourses"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Specialization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#providesAccountingServices"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingDepartment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAddressed"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExam"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFiled"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFulfilled"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasReceived"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasResulted"/>
+        <Class IRI="#Response"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAddressedTo"/>
+        <Class IRI="#Response"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExamOf"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Exam"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFiledBy"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFulfilledBy"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isResultedIn"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSentTo"/>
+        <Class IRI="#Document"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#booked"/>
@@ -2034,67 +2324,118 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#givenForCourse"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#givenForCourse"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasGraduationRequirements"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#GraduationRequirement"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPlacement"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPlacement"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Job"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasPutOn"/>
-        <Class IRI="#E-Money"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasPutOn"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#E-Money"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSpecialization"/>
-        <Class IRI="#Specialization"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#hasTranfered"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Money"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSpecializationCourses"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasTranfered"/>
-        <Class IRI="#Money"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#isOwnedBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isOwnedBy"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
             <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPlacementAt"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPlacementAt"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isPutOn"/>
-        <Class IRI="#BankAccount"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isPutOn"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#isTransfered"/>
-        <Class IRI="#BankAccount"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#isTransfered"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#ownes"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#ownes"/>
         <ObjectUnionOf>
             <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
-            <Class IRI="#BankAccount"/>
-            <Class IRI="#Money"/>
+            <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#BankAccount"/>
+            <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#Money"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#receive"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Person"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/KirillBase#setsGraduationRequirementsOf"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#setsGraduationRequirementsOf"/>
-        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasGraduationRequirements"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#GraduationRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecialization"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Specialization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#hasSpecializationCourses"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#providesAccountingServices"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#AccountingServices"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAddressed"/>
+        <Class IRI="#Response"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExam"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Exam"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFiled"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFulfilled"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasReceived"/>
+        <Class IRI="#Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasResulted"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAddressedTo"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExamOf"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFiledBy"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFulfilledBy"/>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isResultedIn"/>
+        <Class IRI="#Response"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSentTo"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Organization"/>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Role"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <DisjointObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#booked"/>
@@ -2103,9 +2444,22 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isRegistered"/>
     </DisjointObjectProperties>
     <DisjointObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#booked"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasCompletedSuccessfully"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isRegistered"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasCompletedSuccessfully"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasFailed"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasRegistered"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isBookedBy"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isCompletedSuccessfully"/>
+    </DisjointObjectProperties>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#includesCourses"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isPursuedBy"/>
     </DisjointObjectProperties>
     <DisjointObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isCompletedSuccessfully"/>
@@ -2147,6 +2501,10 @@
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#typeProgramme"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#StudyProgramme"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#requestText"/>
+        <Class IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#Request"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#bookingDeadline"/>
         <Datatype abbreviatedIRI="xsd:dateTime"/>
@@ -2174,10 +2532,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#name"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="http://www.semanticweb.org/kirill/Ontology#specializationName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2238,10 +2592,19 @@
             <Literal datatypeIRI="&rdf;PlainLiteral">Minor</Literal>
         </DataOneOf>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#requestText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.semanticweb.org/kirill/Ontology#DegreeType</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Degree</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isSentTo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The sender of the document is left out assumed to be either the Role created the document or the Organisation it is affiliated with.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
