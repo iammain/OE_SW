@@ -713,6 +713,13 @@
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Award"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
+            <Class IRI="http://www.semanticweb.org/kirill/Ontology#Credit"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#Doctorate"/>
         <Class IRI="http://www.semanticweb.org/kirill/Ontology#DegreeType"/>
     </SubClassOf>
@@ -1819,6 +1826,10 @@
         <NamedIndividual IRI="#ResitMath"/>
         <Literal datatypeIRI="&xsd;dateTime">2014-10-28T10:00:00</Literal>
     </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#equalsCredit"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isBookedBy"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#booked"/>
