@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1395247848495" name="http://www.semanticweb.org/kirill/ontologies/2014/2/K" uri="KirillBase.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1395247848495" name="duplicate:http://www.semanticweb.org/kirill/ontologies/2014/2/merged" uri="Ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1395247848495" name="duplicate:http://www.semanticweb.org/kirill/ontologies/2014/2/merged" uri="PanosBase.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395403056796" name="http://www.semanticweb.org/kirill/ontologies/2014/2/K" uri="KirillBase.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395403056796" name="duplicate:http://www.semanticweb.org/kirill/ontologies/2014/2/merged" uri="Ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1395403056796" name="duplicate:http://www.semanticweb.org/kirill/ontologies/2014/2/merged" uri="PanosBase.owl"/>
     </group>
 </catalog>
