@@ -3,10 +3,8 @@
 % A '%' character causes TeX to ignore all remaining text on the line, 
 % and is used for comments like this one.
 
-\documentclass[html]{article}    % Specifies the document style.
-\usepackage{graphicx}
-                           % The preamble begins here. 
-\usepackage{hyperref}
+\documentclass{article}    % Specifies the document style.
+\usepackage{graphicx}	   % The preamble begins here. 
 \usepackage{alltt}
 \title{Ontology Engineering \& Semantic Web \\ Project Report}  % Declares the document's title. 
 \author{Panagiotis Chatzichristodoulou and Kirill Tumanov}    % Declares the author's name
@@ -30,13 +28,26 @@ Some stuff to write.
 % 
 \section{Implementation}
 %
-The ontology of SLM system was designed according to the available SAP AG framework, shown in Fig.~{SAP}.
+The ontology of SLM system was designed according to the available SAP AG framework~\cite{sap}, shown in Fig.~{SAP}.
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{Materials/Figures/1.png}
-    \caption{SAP AG framework of SLM~cite{}}
+    \caption{SAP AG framework of SLM~\cite{sap}}
   \label{SAP}
 \end{figure}
+Although there is no clear specification of what procedures the system is able to reflect, it is relatively easy to understand what are the most essential ones. Some of the blocks shown here in the ontology were logically merged or united by their roles and underlying processes. E.g. ``Graduation" was merged with ``De-Registration" and has a lot in common with ``Define Degree Requirement". 
+A more specific review of the ontology is done in the following subsections. They are organized on the built-in individuals, as a whole student lifecycle process.
+%
+\subsection{Application and Graduation}
+%
+Everything started when a British school graduate Bob Smith heard from his friend Joey Miller about the RWTH University, who graduated on the same year. Joey told him that some years ago he was a student at the Mathematics Department of this university. He followed a Study Programme in Mathematics very similar to the one in existence. Upon completion of the studies, he was awarded a BSc Degree in Mathematics, deregistered by Sam Jones - an Enrollment Manager and included into the list of RWTH Alumni. Now Joey was going to attend an Alumni Meeting organized by Terry Mitchel - an Alumni Manager.
+Joey inspired Bob to take the same study programme as his, since Bob was quite into Math. So, Bob filed an Admission Request, which includes all needed documents and side procedures, this request was received and fulfilled (processed) by the Enrollment Manager. After the decision was made, the Admission Request resulted in Admission Response, which was sent to Bob. Bob received the Response and found himself accepted to the RWTH. He later was enrolled as a student by the Enrollment Manager. 
+% 
+\subsection{Study Programme}
+%
+Bob being a Math student selected to pursue a Study Programme in Mathematics, which culminates with an award of BSc Degree to the graduates. The Study Programme established by a Provost apart from the rest includes courses in Linear Algebra and Statistical Theory. The Programme and all its courses are taught in English. In addition, the Study Programme has a number of specializations, among which are a Major in Mathematics and a Minor in Statistics.
+A certain amount of Credits is given for each Course, while it also is awarded to a Student upon a successful completion. A Course in Statistical Theory has a Linear Algebra as a prerequisite. Each Course has an Exam attached; both of them are taught and conducted respectfully by a Faculty. Course as well as Event has a specific location. 
+
 
 %
 % ---- Bibliography ----
