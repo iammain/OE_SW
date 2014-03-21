@@ -1857,6 +1857,11 @@
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#GradReqMasters"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/1/PanosBase#isSpecOf"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MajorMath"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/kirill/ontologies/2014/2/K#StudyPMath"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isLocated"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#MathConference"/>
         <NamedIndividual IRI="http://www.semanticweb.org/kirill/Ontology#ConferenceVenue"/>
@@ -2913,8 +2918,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isEmployed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasFailed"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isFailed"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasFailed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#hasInternship"/>
@@ -2941,8 +2946,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isInDegree"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedTo"/>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedWith"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#isAwardedTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#playsRole"/>
@@ -3069,12 +3074,12 @@
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/ontologies/2014/2/P#usesAsStudent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#isGradedBy"/>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#grades"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#isGradedBy"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#hasExam"/>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#isExamOf"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#hasExam"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#isFulfilledBy"/>
@@ -3089,8 +3094,8 @@
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#issues"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#writes"/>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#isWrittenBy"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/KirillBase#writes"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#hasAddressed"/>
@@ -3101,16 +3106,16 @@
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#hasFiled"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#isSentTo"/>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#hasReceived"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#isSentTo"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#isResponsibleFor"/>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#hasResponsible"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#isResultedIn"/>
         <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#hasResulted"/>
+        <ObjectProperty IRI="http://www.semanticweb.org/panos/ontologies/2014/2/PanosBase#isResultedIn"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.semanticweb.org/kirill/Ontology#conducts"/>
