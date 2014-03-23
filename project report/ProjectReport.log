@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.28)  23 MAR 2014 13:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.28)  23 MAR 2014 18:33
 entering extended mode
 **ProjectReport.tex
 
@@ -118,7 +118,7 @@ File: Materials/Figures/classUsageCloud.png Graphic file (type png)
 
 <use Materials/Figures/classUsageCloud.png>
 Package pdftex.def Info: Materials/Figures/classUsageCloud.png used on input li
-ne 85.
+ne 86.
 (pdftex.def)             Requested size: 276.00105pt x 182.38744pt.
 
 <Materials/Figures/cloudIndies.png, id=19, 542.025pt x 348.55219pt>
@@ -126,18 +126,18 @@ File: Materials/Figures/cloudIndies.png Graphic file (type png)
 
 <use Materials/Figures/cloudIndies.png>
 Package pdftex.def Info: Materials/Figures/cloudIndies.png used on input line 9
-2.
+3.
 (pdftex.def)             Requested size: 276.00105pt x 177.488pt.
  [4] [5 <C:/Users/Panos/Desktop/Master Courses/block4/ontology engineering & se
 mantic web/oeswPojec/project report/Materials/Figures/classUsageCloud.png> <C:/
 Users/Panos/Desktop/Master Courses/block4/ontology engineering & semantic web/o
 eswPojec/project report/Materials/Figures/cloudIndies.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 []\OT1/cmr/m/n/10 Solution in De-tail: Higher Ed-u-ca-tion and Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 \OT1/cmr/m/n/10 search. Stu-dent Life Man-age-ment. SAP AG,
  []
 
@@ -145,11 +145,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 ("C:\Users\Panos\Desktop\Master Courses\block4\ontology engineering & semantic 
 web\oeswPojec\project report\ProjectReport.aux") ) 
 Here is how much of TeX's memory you used:
- 1173 strings out of 493921
- 16194 string characters out of 3147281
- 67284 words of memory out of 3000000
- 4499 multiletter control sequences out of 15000+200000
- 8362 words of font info for 30 fonts, out of 3000000 for 9000
+ 1175 strings out of 493921
+ 16215 string characters out of 3147281
+ 68284 words of memory out of 3000000
+ 4500 multiletter control sequences out of 15000+200000
+ 8708 words of font info for 31 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,6n,19p,994b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/
@@ -158,10 +158,11 @@ pe1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ProjectReport.pdf (6 pages, 190281 bytes).
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on ProjectReport.pdf (6 pages, 205741 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

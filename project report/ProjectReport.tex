@@ -76,10 +76,11 @@ Once Bob became a Student he started to take care of his upcoming Internship. As
 
 Once Bob received this information from the Study Advisor, he contacted a company named Diamond LLC. There he was said that they had a placement - an Internship in Data Analysis. After thinking of his career prospects Bob decided to accept the offer and fill the position. Since then, in addition to being a Mathematics Student Bob also plays a Role of a Data Analyst.
 % 
-\subsection{Conclusion}
+\subsection{Visualization}
 %
-Building an ontology that successfully represents a problem domain is not a trivial task. It requires a correct abstraction of the notions included, and iterative of restructuring the ontology so that it has an ontoclean structure. In this work the designed ontology capabilities were demonstrated from the individual point of view rather than the structure itself. This approach was chosen because it makes the tasks of reporting and describing the usage of the ontology faster and more complete; faster because it removes from the reader the cognition load of finding usage for the ontology, and more complete because it fills the A-Box and, as a result, completes the Knowledge Base for this ontology. Finally, figures describing the implemented class'~\ref{classUsage} and individual usage~\ref{cloudIndi} are included in the end of the document.
+This section provides and analyses Cloud View visualizations of the ontology. Such visualizations provide insight about the relations between its T-Box and A-Box. Firstly, in Figure~\ref{classUsage} classes that are used the most in the ontology are displayed. That is the ones that have the most relations and provide the basis in which the ontology is build. As expected, the classes of \textit{Course}, \textit{StudyProgramme}, \textit{Student} and \textit{Role} play a major role in the ontology and serve as its backbone. On the other hand, classes like \textit{Database} and \textit{Document} are used much less even though they are essential to the structure of this ontology.
 
+Secondly, information about the amount of functionality each individual within the ontology has, is displayed in Figure~\ref{cloudIndi}. Again, instances of type \textit{Course}, \textit{Role}, \textit{StudyProgramme} and \textit{Student} are the most used ones. Furthermore instances like \textit{UniversityAccountant} have much less connections despite being essential to the ontology. That is expected since some individuals provide the core of the ontology and are used more than others. That displays a good correlation between the Terminology of the ontology and its Application.
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{Materials/Figures/classUsageCloud.png}
@@ -93,10 +94,15 @@ Building an ontology that successfully represents a problem domain is not a triv
     \caption{Cloud view of the ontology visualizing individual usage}
   \label{cloudIndi}
 \end{figure}
+
+% 
+\subsection{Conclusion}
+%
+Building an ontology that successfully represents a problem domain is not a trivial task. It requires a correct abstraction of the notions included, and iterative restructuring of the ontology so that it has an correct structure. In this work the designed ontologys' capabilities were demonstrated from the application point of view rather than the terminological one. This approach was chosen because it makes the tasks of reporting and describing the usage of the ontology easier and more complete; easier because it removes from the reader the cognition load of finding usage for the ontology, and more complete because it provides an Application to the ontology and, as a result, completes the basic Knowledge Base of it.
+
 %
 % ---- Bibliography ----
 %
-\newpage
 \begin{thebibliography}{99}
 %
 \bibitem {sap}
