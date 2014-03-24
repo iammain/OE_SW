@@ -1,9 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.28)  23 MAR 2014 13:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.23)  23 MAR 2014 17:33
 entering extended mode
 **ProjectReport.tex
-
-("C:\Users\Panos\Desktop\Master Courses\block4\ontology engineering & semantic 
-web\oeswPojec\project report\ProjectReport.tex"
+("C:\workspace\OE_SW\project report\ProjectReport.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -67,8 +65,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
 Package: alltt 1997/06/16 v2.0g defines alltt environment
 )
-("C:\Users\Panos\Desktop\Master Courses\block4\ontology engineering & semantic 
-web\oeswPojec\project report\ProjectReport.aux")
+("C:\workspace\OE_SW\project report\ProjectReport.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
@@ -82,7 +79,8 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(C:\Users\Кирилл\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mki
+i
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count88
 \scratchdimen=\dimen105
@@ -110,9 +108,8 @@ Package pdftex.def Info: Materials/Figures/1.png used on input line 34.
 (pdftex.def)             Requested size: 276.00105pt x 185.70102pt.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/Users/Panos/Deskto
-p/Master Courses/block4/ontology engineering & semantic web/oeswPojec/project r
-eport/Materials/Figures/1.png>] [3]
+{C:/Users/Кирилл/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <
+C:/workspace/OE_SW/project report/Materials/Figures/1.png>] [3]
 <Materials/Figures/classUsageCloud.png, id=18, 383.93437pt x 253.69781pt>
 File: Materials/Figures/classUsageCloud.png Graphic file (type png)
 
@@ -128,10 +125,8 @@ File: Materials/Figures/cloudIndies.png Graphic file (type png)
 Package pdftex.def Info: Materials/Figures/cloudIndies.png used on input line 9
 2.
 (pdftex.def)             Requested size: 276.00105pt x 177.488pt.
- [4] [5 <C:/Users/Panos/Desktop/Master Courses/block4/ontology engineering & se
-mantic web/oeswPojec/project report/Materials/Figures/classUsageCloud.png> <C:/
-Users/Panos/Desktop/Master Courses/block4/ontology engineering & semantic web/o
-eswPojec/project report/Materials/Figures/cloudIndies.png>]
+ [4] [5 <C:/workspace/OE_SW/project report/Materials/Figures/classUsageCloud.pn
+g> <C:/workspace/OE_SW/project report/Materials/Figures/cloudIndies.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 103--105
 []\OT1/cmr/m/n/10 Solution in De-tail: Higher Ed-u-ca-tion and Re-
  []
@@ -141,24 +136,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--105
 \OT1/cmr/m/n/10 search. Stu-dent Life Man-age-ment. SAP AG,
  []
 
-[6]
-("C:\Users\Panos\Desktop\Master Courses\block4\ontology engineering & semantic 
-web\oeswPojec\project report\ProjectReport.aux") ) 
+[6] ("C:\workspace\OE_SW\project report\ProjectReport.aux") ) 
 Here is how much of TeX's memory you used:
  1173 strings out of 493921
- 16194 string characters out of 3147281
+ 15753 string characters out of 3147260
  67284 words of memory out of 3000000
  4499 multiletter control sequences out of 15000+200000
  8362 words of font info for 30 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,6n,19p,994b,217s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+<C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 Output written on ProjectReport.pdf (6 pages, 190281 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
