@@ -42,7 +42,7 @@ A more specific review of the ontology is done in the following subsections. The
 %
 \subsection{Application and Graduation}
 %
-Everything started when a British school graduate Bob Smith heard from his friend Joey Miller about the RWTH University, who graduated on the same year. Joey told him that some years ago he was a student at the Mathematics Department of this university. He followed a Study Programme in Mathematics very similar to the one in existence. Upon completion of the studies, he was awarded a BSc Degree in Mathematics, deregistered by Sam Jones - an Enrollment Manager and included into the list of RWTH Alumni. Now Joey was going to attend an Alumni Meeting organized by Terry Mitchel - an Alumni Manager.
+Everything started when a British school graduate Bob Smith heard from his friend Joey Miller about the RWTH University, who graduated on the same year. Joey told him that some years ago he was a student at the Mathematics Department of this university. He followed a Study Programme in Mathematics very similar to the one in existence. Upon completion of the studies, he was awarded a BSc Degree in Mathematics, de-registered by Sam Jones - an Enrollment Manager and included into the list of RWTH Alumni. Now Joey was going to attend an Alumni Meeting organized by Terry Mitchel - an Alumni Manager.
 
 Joey inspired Bob to take the same study programme as his, since Bob was quite into Math. So, Bob filed an Admission Request, which includes all needed documents and side procedures, this request was received and fulfilled (processed) by the Enrollment Manager. After the decision was made, the Admission Request resulted in Admission Response, which was sent to Bob. Bob received the Response and found himself accepted to the RWTH. He later was enrolled as a student by the Enrollment Manager. 
 % 
@@ -72,14 +72,15 @@ However not only finances but all the personal information and grades of a Stude
 % 
 \subsection{Advising}
 %
-Once Bob became a Student he started to take care of his upcoming Internship. As he was new to the procedures he decided to ask an advise of the Mathematics Department Study Advisor - Gonny Millews. To do so Bob filed a request of additional info on the internship possibilities, which was a general e-mail on practice. Gonny received his e-mail, thought of an answer and replied, providing him a general information an useful links. Therefore, she fulfilled a request and produced a response to it.
+Once Bob became a Student he started to take care of his upcoming Internship. As he was new to the procedures he decided to ask an advise of the Mathematics Department Study Advisor - Gonny Willems. To do so, Bob filed a request of additional info on the internship possibilities, which was a general e-mail on practice. Gonny received his e-mail, thought of an answer and replied, providing him a general information an useful links. Therefore, she fulfilled a request and produced a response to it.
 
 Once Bob received this information from the Study Advisor, he contacted a company named Diamond LLC. There he was said that they had a placement - an Internship in Data Analysis. After thinking of his career prospects Bob decided to accept the offer and fill the position. Since then, in addition to being a Mathematics Student Bob also plays a Role of a Data Analyst.
 % 
-\subsection{Conclusion}
+\subsection{Visualization}
 %
-Building an ontology that successfully represents a problem domain is not a trivial task. It requires a correct abstraction of the notions included, and iterative of restructuring the ontology so that it has an ontoclean structure. In this work the designed ontology capabilities were demonstrated from the individual point of view rather than the structure itself. This approach was chosen because it makes the tasks of reporting and describing the usage of the ontology faster and more complete; faster because it removes from the reader the cognition load of finding usage for the ontology, and more complete because it fills the A-Box and, as a result, completes the Knowledge Base for this ontology. Finally, figures describing the implemented class'~\ref{classUsage} and individual usage~\ref{cloudIndi} are included in the end of the document.
+This section provides and analyses visualizations of the ontology. The visualizations provided are in the form of Cloud Views. Such views provide insight about the relations between its Terminology and Application. Firstly, in Figure~\ref{classUsage} classes that are used the most in the ontology are displayed. That is the ones that have the most relations and provide the basis in which the ontology is build. As expected, the classes of \textit{Course}, \textit{StudyProgramme}, \textit{Student} and \textit{Role} play a major role in the ontology and serve as its backbone. On the other hand, classes like \textit{Database} and \textit{Document} are used much less even though they are essential to the structure of this ontology.
 
+Secondly, information about the amount of functionality each individual within the ontology has, is displayed in Figure~\ref{cloudIndi}. Again, instances of type \textit{Course}, \textit{Role}, \textit{StudyProgramme} and \textit{Student} are the most used ones. Furthermore instances like \textit{UniversityAccountant} have much less connections despite being essential to the ontology. That is expected since some individuals provide the core of the ontology and are used more than others. That displays a good correlation between the Terminology of the ontology and its Application.
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{Materials/Figures/classUsageCloud.png}
@@ -93,10 +94,15 @@ Building an ontology that successfully represents a problem domain is not a triv
     \caption{Cloud view of the ontology visualizing individual usage}
   \label{cloudIndi}
 \end{figure}
+
+% 
+\subsection{Conclusion}
+%
+Building an ontology that successfully represents a problem domain is not a trivial task. It requires a correct abstraction of the notions included, and iterative restructuring of the ontology so that it has an correct structure. In this work the designed ontology's capabilities were demonstrated from the application point of view rather than the terminological one. This approach was chosen because it makes the tasks of reporting and describing the usage of the ontology easier and more complete; easier because it removes from the reader the cognition load of finding usage for the ontology, and more complete because it provides an Application to the ontology and, as a result, completes the basic Knowledge Base of it.
+
 %
 % ---- Bibliography ----
 %
-\newpage
 \begin{thebibliography}{99}
 %
 \bibitem {sap}
