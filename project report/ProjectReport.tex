@@ -24,15 +24,15 @@ This work serves as a reference and a summary document for the designed Student 
 % 
 \section{Introduction}
 %
-Information systems are rapidly evolving from tailor-made and cost-sensitive database applications to homogeneous open-source and globally scoped solutions~\cite{Semantic Web Primer}. These changes have triggered the creation of tools that enable computer scientists to create formal specifications of problem domains. Such tools help tackle modeling problems and create application frameworks that make extending and cooperating with such systems more efficient. The basic modeling unit of these systems is the Ontology, and the field that studies the methods and methodologies of building ontologies is the field of Ontology Engineering.
+Information systems (IS) are rapidly evolving from tailor-made and cost-sensitive database applications to homogeneous open-source and globally scoped solutions~\cite{ant:vha}. These changes have triggered the creation of tools that enable computer scientists to create formal specifications of problem domains. Such tools help tackle modeling problems and create frameworks that make extension and interaction with IS more efficient. One of the fundamental tools used is an ontology, which allows to design and structure the domain knowledge in the way easily understandable by both IS engineers and users.
 
- From an Artificial Intelligence point of view, an ontology is defined as: ``explicit specification of conceptualization''~\cite{Gruber}, meaning that ontologies are formal representations of sets of concepts and the relations between them within a domain. It must be noted that even though ontologies are build to serve as formal representations of a certain problem, ontologies should be build as problem-independent as possible. Consequently, an ontology about a car of a certain brand must also be able to represent cars of other brads without any modifications. The domain of the ontology described in this paper is the domain of SLM, meaning that the ontology build creates a framework that describes the SLM system. Despite the fact that it was based on SAP-SLM~\cite{sap}, the ontology can represent a much wider range of student lifecycle management systems.
+From an Artificial Intelligence point of view, an ontology is defined as: ``explicit specification of conceptualization''~\cite{gru}, meaning that ontologies are formal representations of sets of concepts and the relations between them within a domain. It must be noted that even though ontologies are build to serve as formal representations of a certain problem, ontologies should be build as problem-independent as possible~\cite{gua:wel}. Consequently, an ontology about a car of a certain brand must also be able to represent cars of other brads without any modifications. The domain of the ontology described in this paper is the domain of SLM, meaning that the ontology build creates a framework that describes the SLM system. Despite the fact that it was based on SAP-SLM~\cite{sap}, the ontology can represent a much wider range of student lifecycle management systems.
 % 
 \section{Implementation}
 %
 The domain of the ontology described in this paper is SLM, meaning that the ontology build creates a framework that describes the SLM system. Despite the fact that it was based on SAP-SLM~\cite{sap}, the ontology can be used to model the student life outside of the framework and be easily extended to show more specific situations.
 
-The ontology of SLM system was designed according to the available SAP AG framework, shown in Fig.~\ref{SAP}. The implementation itself was done in Protege 4.3.0 software in the Web Ontology Language (OWL) format. HermiT 1.3.8 was used as a means of reasoning. 
+The ontology of SLM system was designed according to the available SAP AG framework, shown in Fig.~\ref{SAP}. The implementation itself was done in Protege 4.3.0 software~\cite{pro} in the Web Ontology Language (OWL) format. HermiT 1.3.8 was used as a means of reasoning. 
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{Materials/Figures/1.png}
@@ -42,7 +42,7 @@ The ontology of SLM system was designed according to the available SAP AG framew
 
 Although there is no clear specification of what procedures the system is able to reflect, it is relatively easy to understand what are the most essential ones. Some of the blocks shown here in the ontology were logically merged or united by their roles and underlying processes. E.g. ``Graduation" was merged with ``De-Registration" and has a lot in common with ``Define Degree Requirement". 
 
-A more specific review of the ontology is done in the following subsections. They are organized on the built-in individuals, as a whole student lifecycle process.
+A more specific review of the ontology is done in the following subsections. They are organized on the built-in individuals, as a whole student lifecycle process. Note that ontology classes and individuals are italicized for distinction and, in most cases, verbs linking them together represent the existed relations between them in the ontology. These relations are not marked for the easiness of read.
 %
 \subsection{Application and Graduation}
 %
@@ -80,21 +80,23 @@ When \textit{Bob} received this information from the \textit{Study Advisor}, he 
 % 
 \subsection{Visualization}
 %
-This section provides and analyses visualizations of the ontology. The visualizations provided are in the form of Cloud Views. Such views provide insight about the relations between its Terminology and Application. Firstly, in Fig.~\ref{classUsage} classes that are used the most in the ontology are displayed. That is the ones that have the most relations and provide the basis in which the ontology is build. As expected, the classes of \textit{Course}, \textit{Study Programme}, \textit{Student} and \textit{Role} play a major role in the ontology and serve as its backbone. On the other hand, classes like \textit{Database} and \textit{Document} are used much less even though they are essential to the structure of this ontology.
-
-Secondly, information about the amount of functionality each individual within the ontology has is shown in Fig.~\ref{cloudIndi}. Again, instances of type \textit{Course}, \textit{Role}, \textit{Study Programme} and \textit{Student} are the most used ones. Furthermore instances like \textit{University Accountant} have much less connections despite being essential to the ontology. That is expected since some individuals provide the core of the ontology and are used more than others. That displays a good correlation between the Terminology of the ontology and its Application.
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{Materials/Figures/classUsageCloud.png}
     \caption{Most used classes}
   \label{classUsage}
 \end{figure}
+
 \begin{figure}[htbp]
   \centering
     \includegraphics[width=0.8\textwidth]{Materials/Figures/cloudIndies.png}
     \caption{Most used individuals}
   \label{cloudIndi}
 \end{figure}
+
+This section provides Cloud Views~\cite{clo} visualizations of the ontology. Such views give an insight about the relations between its Terminology and Application. Firstly, in Fig.~\ref{classUsage} classes that are used the most in the ontology are displayed. That is the ones that have the most relations and provide the basis in which the ontology is build. As expected, the classes of \textit{Course}, \textit{Study Programme}, \textit{Student} and \textit{Role} play a major role in the ontology and serve as its backbone. On the other hand, classes like \textit{Database} and \textit{Document} are used much less even though they are essential to the structure of this ontology.
+
+Secondly, information about the amount of functionality each individual within the ontology has is shown in Fig.~\ref{cloudIndi}. Again, instances of type \textit{Course}, \textit{Role}, \textit{Study Programme} and \textit{Student} are the most used ones. Furthermore instances like \textit{University Accountant} have much less connections despite being essential to the ontology. That is expected since some individuals provide the core of the ontology and are used more than others. That displays a good correlation between the Terminology of the ontology and its Application.
 % 
 \subsection{Conclusion}
 %
@@ -102,40 +104,34 @@ Building a proper ontology that is minimal and at the same time successfully rep
 %
 % ---- Bibliography ----
 %
-\newpage
 \begin{thebibliography}{99}
 %
-\bibitem{Semantic Web Primer}
-Antoniou, G., \& Van Harmelen, F. (2004). A semantic web primer. MIT press.
+\bibitem{ant:vha}
+Antoniou, G., van Harmelen, F.:
+A semantic web primer. 
+MIT press, (2004)
+
+\bibitem{clo}
+Cloud Views plug-in to Protege.
+\texttt{http://protegewiki.stanford.edu/\newline wiki/Cloud\_Views}
+
+\bibitem{gru}
+Gruber, T. R.:
+Toward Principles for the Design of Ontologies Used for Knowledge Sharing. 
+Int J Human-Comp Studies, 43, 5-6, 907--928 (1995)
+
+\bibitem{gua:wel}
+Guarino N., Welty C.:
+Evaluating Ontological Decisions With Ontoclean.
+CACM, 45, 2, 61--65 (2002)
+
+\bibitem{pro}
+Protege tool website.
+\texttt{http://protege.stanford.edu/}
 
 \bibitem {sap}
 Solution in Detail: Higher Education and Research. Student Life Management.
-SAP AG, \texttt{http://www.sap.com/bin/sapcom/en\_us/downloadasset.2013-12-dec\newline-11-11.higher-education-and-research-student-lifecycle-\newline management-pdf.html}(2013)
-
-\bibitem{protege}
-Protege ontology creation tool Website.\\
-\texttt{http://protege.stanford.edu/}
-
-\bibitem{protegeWiki}
-Protege ontology creation tool Wiki.\\
-\texttt{http://protegewiki.stanford.edu/wiki/Main\_Page}
-
-\bibitem{protegeCloudViews}
-Protege plugin used to create the cloud Views.\\
-\texttt{http://protegewiki.stanford.edu/wiki/Cloud\_Views}
-
-\bibitem{ontoCleanPaper}
-Ontoclean Method.\\
-\texttt{http://www.researchgate.net/publication/27293101\_Evalu-\newline
-ating\_ontological\_decisions\_with\_OntoClean/file/9fcfd50-\newline
-f9621161392.pdf}
-
-\bibitem{Gruber}
-Gruber T.:
-\\
-\texttt{http://www-ksl.stanford.edu/kst/ what-is-an-ontology.html.} 
-
-
+SAP AG, \texttt{http://www.sap.com/bin/sapcom/en\_us/downloadasset.2013-12-dec\newline-11-11.higher-education-and-research-student-lifecycle-\newline management-pdf.html} (2013)
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{thebibliography}
