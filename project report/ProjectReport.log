@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.28)  26 MAR 2014 14:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.11.28)  26 MAR 2014 14:20
 entering extended mode
 **ProjectReport.tex
 
@@ -128,20 +128,19 @@ File: Materials/Figures/cloudIndies.png Graphic file (type png)
 Package pdftex.def Info: Materials/Figures/cloudIndies.png used on input line 9
 4.
 (pdftex.def)             Requested size: 276.00105pt x 196.0728pt.
- [4]
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+ [4] [5 <C:/Users/Panos/Desktop/Master Courses/block4/ontology engineering & se
+mantic web/oeswPojec/project report/Materials/Figures/classUsageCloud.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 []\OT1/cmr/m/n/10 Solution in De-tail: Higher Ed-u-ca-tion and Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--113
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 \OT1/cmr/m/n/10 search. Stu-dent Life Man-age-ment. SAP AG,
  []
 
-[5 <C:/Users/Panos/Desktop/Master Courses/block4/ontology engineering & semanti
-c web/oeswPojec/project report/Materials/Figures/classUsageCloud.png>] [6 <C:/U
-sers/Panos/Desktop/Master Courses/block4/ontology engineering & semantic web/oe
-swPojec/project report/Materials/Figures/cloudIndies.png>]
+[6 <C:/Users/Panos/Desktop/Master Courses/block4/ontology engineering & semanti
+c web/oeswPojec/project report/Materials/Figures/cloudIndies.png>]
 ("C:\Users\Panos\Desktop\Master Courses\block4\ontology engineering & semantic 
 web\oeswPojec\project report\ProjectReport.aux") ) 
 Here is how much of TeX's memory you used:
@@ -160,7 +159,7 @@ s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ProjectReport.pdf (6 pages, 209541 bytes).
+Output written on ProjectReport.pdf (6 pages, 209493 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
